@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(npm install:*)",
+      "Bash(node server.js)",
+      "Bash(curl -s http://localhost:3000/api/health)",
+      "Bash(python3 -m json.tool)",
+      "Bash(curl -s http://localhost:3000/api/services)",
+      "Bash(curl -s -X POST http://localhost:3000/api/contact -H 'Content-Type: application/json' -d '{\"name\":\"Omer Ikram\",\"email\":\"omer@mirac.com\",\"projectType\":\"Brand Architecture\",\"brief\":\"We need a full brand system built from scratch.\"}')",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/contact)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/contact-mobile)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/services)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/mobile)",
+      "Bash(curl -s http://localhost:3000/api/inquiries)",
+      "Bash(npm list:*)",
+      "Bash(npx vercel:*)",
+      "Bash(vercel:*)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit -m ':*)"
+    ]
+  }
+}

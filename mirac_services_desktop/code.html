@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MIRAC | SERVICES</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary": "#675a00",
+                        "on-secondary-fixed": "#424200",
+                        "secondary": "#e9e958",
+                        "error": "#ff7351",
+                        "surface": "#0e0e0e",
+                        "on-error-container": "#ffd2c8",
+                        "surface-variant": "#262626",
+                        "on-surface-variant": "#ababab",
+                        "background": "#0e0e0e",
+                        "secondary-fixed": "#e9e958",
+                        "surface-container": "#191919",
+                        "surface-container-high": "#1f1f1f",
+                        "secondary-container": "#626200",
+                        "tertiary": "#fff1b2",
+                        "surface-container-lowest": "#000000",
+                        "primary-fixed-dim": "#b9ef00",
+                        "error-dim": "#d53d18",
+                        "surface-tint": "#f3ffcd",
+                        "on-background": "#ffffff",
+                        "on-tertiary-fixed-variant": "#685c00",
+                        "on-secondary-fixed-variant": "#5f5f00",
+                        "surface-dim": "#0e0e0e",
+                        "surface-container-highest": "#262626",
+                        "on-error": "#450900",
+                        "secondary-fixed-dim": "#dbdb4b",
+                        "surface-container-low": "#131313",
+                        "on-primary-fixed": "#384b00",
+                        "tertiary-container": "#fce34b",
+                        "on-tertiary-fixed": "#493f00",
+                        "on-surface": "#ffffff",
+                        "error-container": "#b92902",
+                        "surface-bright": "#2c2c2c",
+                        "primary-container": "#c5fe00",
+                        "outline-variant": "#484848",
+                        "on-primary-fixed-variant": "#506900",
+                        "on-primary": "#4f6700",
+                        "primary-fixed": "#c5fe00",
+                        "inverse-on-surface": "#555555",
+                        "tertiary-fixed": "#fce34b",
+                        "inverse-surface": "#f9f9f9",
+                        "outline": "#757575",
+                        "on-primary-container": "#485e00",
+                        "primary": "#f3ffcd",
+                        "on-tertiary-container": "#5d5200",
+                        "secondary-dim": "#dbdb4b",
+                        "tertiary-fixed-dim": "#eed53e",
+                        "on-secondary": "#555500",
+                        "primary-dim": "#b9ef00",
+                        "on-secondary-container": "#ffff6b",
+                        "tertiary-dim": "#eed53e",
+                        "inverse-primary": "#4f6700"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "0px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Manrope', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .editorial-line {
+            height: 1px;
+            background-color: #484848;
+            width: 100%;
+        }
+        .neon-line {
+            height: 1px;
+            background-color: #C6FF00;
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-surface-container-lowest">
+<!-- TopAppBar -->
+<nav class="bg-black text-white font-['Space_Grotesk'] uppercase tracking-tighter fixed top-0 w-full z-50 border-b border-[#484848] border-opacity-50">
+<div class="flex justify-between items-center w-full px-6 py-8 max-w-full mx-auto">
+<div class="text-3xl font-bold tracking-tighter text-white">MIRAC</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-white opacity-80 hover:text-[#C6FF00] transition-colors duration-200" href="#">HOME</a>
+<a class="text-[#C6FF00] border-b-2 border-[#C6FF00] pb-1" href="#">SERVICES</a>
+<a class="text-white opacity-80 hover:text-[#C6FF00] transition-colors duration-200" href="#">CONTACT</a>
+</div>
+<button class="material-symbols-outlined text-[#C6FF00] scale-95 active:opacity-70 transition-transform">menu</button>
+</div>
+</nav>
+<main class="pt-32 pb-24">
+<!-- Hero Section -->
+<header class="px-6 md:px-12 mb-32">
+<h1 class="font-headline font-extrabold text-7xl md:text-[12rem] leading-none tracking-tighter uppercase mb-8">
+                SERVICES
+            </h1>
+<div class="editorial-line mb-8"></div>
+<p class="font-body text-xl md:text-3xl max-w-4xl font-light leading-relaxed">
+                We build systems across Marketing, Technology, and Growth. 
+                <span class="text-primary-container">Precision over fluff.</span> Infrastructure over aesthetics.
+            </p>
+</header>
+<!-- Services Hierarchy -->
+<section class="flex flex-col">
+<!-- MARKETING SECTION -->
+<div class="group border-t border-[#484848] hover:bg-surface-container-low transition-colors duration-300">
+<div class="px-6 md:px-12 py-16 md:py-24">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<div class="md:col-span-4">
+<span class="font-headline font-bold text-primary-container text-xl block mb-4">01</span>
+<h2 class="font-headline font-black text-5xl md:text-8xl tracking-tighter uppercase mb-6">MARKETING</h2>
+</div>
+<div class="md:col-span-8">
+<p class="font-body text-2xl md:text-4xl font-light mb-12 max-w-2xl">
+                                We build content and acquisition systems.
+                            </p>
+<div class="space-y-4">
+<div class="neon-line opacity-30"></div>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-12">
+<li class="flex items-center justify-between group/item cursor-pointer">
+<span class="font-label text-lg uppercase tracking-widest text-white group-hover/item:text-primary-container transition-colors">Brand Positioning</span>
+<span class="material-symbols-outlined text-primary-container text-sm">arrow_forward_ios</span>
+</li>
+<li class="flex items-center justify-between group/item cursor-pointer">
+<span class="font-label text-lg uppercase tracking-widest text-white group-hover/item:text-primary-container transition-colors">Content Systems</span>
+<span class="material-symbols-outlined text-primary-container text-sm">arrow_forward_ios</span>
+</li>
+<li class="flex items-center justify-between group/item cursor-pointer">
+<span class="font-label text-lg uppercase tracking-widest text-white group-hover/item:text-primary-container transition-colors">Performance Marketing</span>
+<span class="material-symbols-outlined text-primary-container text-sm">arrow_forward_ios</span>
+</li>
+<li class="flex items-center justify-between group/item cursor-pointer">
+<span class="font-label text-lg uppercase tracking-widest text-white group-hover/item:text-primary-container transition-colors">SEO</span>
+<span class="material-symbols-outlined text-primary-container text-sm">arrow_forward_ios</span>
+</li>
+<li class="flex items-center justify-between group/item cursor-pointer">
+<span class="font-label text-lg uppercase tracking-widest text-white group-hover/item:text-primary-container transition-colors">Social Media Systems</span>
+<span class="material-symbols-outlined text-primary-container text-sm">arrow_forward_ios</span>
+</li>
+<li class="flex items-center justify-between group/item cursor-pointer">
+<span class="font-label text-lg uppercase tracking-widest text-white group-hover/item:text-primary-container transition-colors">Funnels</span>
+<span class="material-symbols-outlined text-primary-container text-sm">arrow_forward_ios</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- TECHNOLOGY SECTION -->
+<div class="group border-t border-[#484848] hover:bg-surface-container-low transition-colors duration-300">
+<div class="px-6 md:px-12 py-16 md:py-24">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<div class="md:col-span-4">
+<span class="font-headline font-bold text-primary-container text-xl block mb-4">02</span>
+<h2 class="font-headline font-black text-5xl md:text-8xl tracking-tighter uppercase mb-6">TECHNOLOGY</h2>
+</div>
+<div class="md:col-span-8">
+<p class="font-body text-2xl md:text-4xl font-light mb-12 max-w-2xl">
+                                We build infrastructure.
+                            </p>
+<div class="space-y-4">
+<div class="neon-line opacity-30"></div>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-12">
+<li class="flex items-center justify-between group/item cursor-pointer">
+<span class="font-label text-lg uppercase tracking-widest text-white group-hover/item:text-primary-container transition-colors">Web Development</span>
+<span class="material-symbols-outlined text-primary-container text-sm">arrow_forward_ios</span>
+</li>
+<li class="flex items-center justify-between group/item cursor-pointer">
+<span class="font-label text-lg uppercase tracking-widest text-white group-hover/item:text-primary-container transition-colors">CRM Systems</span>
+<span class="material-symbols-outlined text-primary-container text-sm">arrow_forward_ios</span>
+</li>
+<li class="flex items-center justify-between group/item cursor-pointer">
+<span class="font-label text-lg uppercase tracking-widest text-white group-hover/item:text-primary-container transition-colors">Automation</span>
+<span class="material-symbols-outlined text-primary-container text-sm">arrow_forward_ios</span>
+</li>
+<li class="flex items-center justify-between group/item cursor-pointer">
+<span class="font-label text-lg uppercase tracking-widest text-white group-hover/item:text-primary-container transition-colors">Payments</span>
+<span class="material-symbols-outlined text-primary-container text-sm">arrow_forward_ios</span>
+</li>
+<li class="flex items-center justify-between group/item cursor-pointer">
+<span class="font-label text-lg uppercase tracking-widest text-white group-hover/item:text-primary-container transition-colors">Dashboards</span>
+<span class="material-symbols-outlined text-primary-container text-sm">arrow_forward_ios</span>
+</li>
+<li class="flex items-center justify-between group/item cursor-pointer">
+<span class="font-label text-lg uppercase tracking-widest text-white group-hover/item:text-primary-container transition-colors">ERP Systems</span>
+<span class="material-symbols-outlined text-primary-container text-sm">arrow_forward_ios</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- GROWTH SECTION -->
+<div class="group border-t border-b border-[#484848] hover:bg-surface-container-low transition-colors duration-300">
+<div class="px-6 md:px-12 py-16 md:py-24">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
+<div class="md:col-span-4">
+<span class="font-headline font-bold text-primary-container text-xl block mb-4">03</span>
+<h2 class="font-headline font-black text-5xl md:text-8xl tracking-tighter uppercase mb-6">GROWTH</h2>
+</div>
+<div class="md:col-span-8">
+<p class="font-body text-2xl md:text-4xl font-light mb-12 max-w-2xl">
+                                We engineer scalable growth.
+                            </p>
+<div class="space-y-4">
+<div class="neon-line opacity-30"></div>
+<ul class="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-12">
+<li class="flex items-center justify-between group/item cursor-pointer">
+<span class="font-label text-lg uppercase tracking-widest text-white group-hover/item:text-primary-container transition-colors">Brand Audits</span>
+<span class="material-symbols-outlined text-primary-container text-sm">arrow_forward_ios</span>
+</li>
+<li class="flex items-center justify-between group/item cursor-pointer">
+<span class="font-label text-lg uppercase tracking-widest text-white group-hover/item:text-primary-container transition-colors">Growth Strategy</span>
+<span class="material-symbols-outlined text-primary-container text-sm">arrow_forward_ios</span>
+</li>
+<li class="flex items-center justify-between group/item cursor-pointer">
+<span class="font-label text-lg uppercase tracking-widest text-white group-hover/item:text-primary-container transition-colors">Revenue Models</span>
+<span class="material-symbols-outlined text-primary-container text-sm">arrow_forward_ios</span>
+</li>
+<li class="flex items-center justify-between group/item cursor-pointer">
+<span class="font-label text-lg uppercase tracking-widest text-white group-hover/item:text-primary-container transition-colors">Go-To-Market</span>
+<span class="material-symbols-outlined text-primary-container text-sm">arrow_forward_ios</span>
+</li>
+<li class="flex items-center justify-between group/item cursor-pointer">
+<span class="font-label text-lg uppercase tracking-widest text-white group-hover/item:text-primary-container transition-colors">Business Consultancy</span>
+<span class="material-symbols-outlined text-primary-container text-sm">arrow_forward_ios</span>
+</li>
+<li class="flex items-center justify-between group/item cursor-pointer">
+<span class="font-label text-lg uppercase tracking-widest text-white group-hover/item:text-primary-container transition-colors">Retention Systems</span>
+<span class="material-symbols-outlined text-primary-container text-sm">arrow_forward_ios</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Visual Segment -->
+<section class="py-32 px-6 md:px-12">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+<div class="relative aspect-video md:aspect-square bg-surface-container-high overflow-hidden">
+<img class="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700" data-alt="Abstract futuristic technical data visual with neon green lines and binary code on a deep black background, technical glitch aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFHG-bHYxIW42a7QJ14a5hyZZG7Gpfj8S2Y5gR9hug3BZUdsVxQZZyLrCHn-n8_xFop-bKZxu14mLXK8Ws3LS0otQZxkCQO05SnqfFa7o9KTNpbQ8ELVtDPLg70ZUQxfGAYat6q8nhq-bkGKA3_DWTPUNHH2dK-Po7NspXRkvBRbovL5cky2XllSshFWj9m_WOSMywYzwKSQ_3rVttH7KLBLE8M2RuLk-xQcpcVF-QxS1eEGrWAJQQhiF6T2RCOZ3fdHVRWCsSUoE"/>
+</div>
+<div class="space-y-12">
+<h3 class="font-headline font-black text-6xl md:text-8xl tracking-tighter uppercase leading-none">
+                        SYSTEMS OVER <br/> SLOGANS.
+                    </h3>
+<p class="font-body text-xl md:text-2xl font-light text-on-surface-variant max-w-xl">
+                        We don't just advise; we execute. Our methodology integrates high-performance technology with creative marketing to drive measurable growth metrics.
+                    </p>
+<div>
+<button class="bg-primary-container text-on-primary font-headline font-black text-xl uppercase px-12 py-6 hover:bg-primary-fixed-dim transition-colors">
+                            START A PROJECT
+                        </button>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-black text-white font-['Manrope'] text-xs uppercase tracking-widest border-t border-[#484848] w-full">
+<div class="flex flex-col md:flex-row justify-between items-center w-full px-6 py-12 max-w-full mx-auto">
+<div class="mb-8 md:mb-0">
+<div class="text-lg font-bold text-white mb-2">MIRAC</div>
+<p class="opacity-50 tracking-normal">EDITORIAL PRECISION IN DIGITAL SYSTEMS</p>
+</div>
+<div class="flex flex-col md:flex-row md:space-x-12 space-y-4 md:space-y-0 items-center">
+<a class="text-white opacity-50 hover:opacity-100 hover:text-[#C6FF00] underline decoration-1" href="#">INSTAGRAM</a>
+<a class="text-white opacity-50 hover:opacity-100 hover:text-[#C6FF00] underline decoration-1" href="#">TWITTER</a>
+<a class="text-white opacity-50 hover:opacity-100 hover:text-[#C6FF00] underline decoration-1" href="#">LINKEDIN</a>
+</div>
+<div class="mt-8 md:mt-0 opacity-50">
+                © 2024 MIRAC. ALL RIGHTS RESERVED.
+            </div>
+</div>
+</footer>
+</body></html>

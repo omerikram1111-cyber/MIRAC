@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MIRAC | Engineered Growth</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                "secondary-fixed-dim": "#dbdb4b",
+                "surface-variant": "#262626",
+                "surface-container-low": "#131313",
+                "on-tertiary-container": "#5d5200",
+                "on-secondary-fixed-variant": "#5f5f00",
+                "surface": "#0e0e0e",
+                "on-secondary": "#555500",
+                "surface-container-highest": "#262626",
+                "on-surface": "#ffffff",
+                "secondary": "#e9e958",
+                "primary-dim": "#b9ef00",
+                "surface-container": "#191919",
+                "tertiary-container": "#fce34b",
+                "on-tertiary-fixed-variant": "#685c00",
+                "secondary-dim": "#dbdb4b",
+                "on-primary": "#4f6700",
+                "primary-fixed-dim": "#b9ef00",
+                "inverse-surface": "#f9f9f9",
+                "on-background": "#ffffff",
+                "inverse-primary": "#4f6700",
+                "on-secondary-fixed": "#424200",
+                "on-surface-variant": "#ababab",
+                "primary": "#f3ffcd",
+                "surface-container-lowest": "#000000",
+                "on-tertiary": "#675a00",
+                "tertiary-fixed": "#fce34b",
+                "secondary-fixed": "#e9e958",
+                "inverse-on-surface": "#555555",
+                "on-tertiary-fixed": "#493f00",
+                "on-primary-fixed": "#384b00",
+                "on-error": "#450900",
+                "tertiary": "#fff1b2",
+                "surface-tint": "#f3ffcd",
+                "outline-variant": "#484848",
+                "on-secondary-container": "#ffff6b",
+                "outline": "#757575",
+                "on-primary-container": "#485e00",
+                "error": "#ff7351",
+                "surface-bright": "#2c2c2c",
+                "error-dim": "#d53d18",
+                "background": "#0e0e0e",
+                "on-error-container": "#ffd2c8",
+                "tertiary-dim": "#eed53e",
+                "primary-fixed": "#c5fe00",
+                "error-container": "#b92902",
+                "surface-container-high": "#1f1f1f",
+                "tertiary-fixed-dim": "#eed53e",
+                "surface-dim": "#0e0e0e",
+                "on-primary-fixed-variant": "#506900",
+                "primary-container": "#c5fe00",
+                "secondary-container": "#626200"
+            },
+            "borderRadius": {
+                "none": "0px",
+                "DEFAULT": "0px",
+                "lg": "0px",
+                "xl": "0px",
+                "full": "9999px"
+            },
+            "fontFamily": {
+                "headline": ["Space Grotesk"],
+                "body": ["Manrope"],
+                "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Manrope', sans-serif;
+        }
+        .acid-gradient-text {
+            background: linear-gradient(to right, #c5fe00, #ffffff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .scan-line {
+            width: 100%;
+            height: 1px;
+            background: rgba(197, 254, 0, 0.3);
+            position: absolute;
+            z-index: 10;
+        }
+        #nav-drawer {
+            transform: translateY(-100%);
+            transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+        }
+        #nav-drawer.open {
+            transform: translateY(0);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+</head>
+<body class="bg-surface-container-lowest text-on-background selection:bg-primary-container selection:text-on-primary">
+<!-- TopAppBar -->
+<header class="bg-black text-[#C6FF00] font-['Space_Grotesk'] font-bold tracking-tighter uppercase w-full border-b border-[#484848] flex justify-between items-center px-6 h-16 fixed top-0 z-[100]">
+<div class="text-2xl font-black tracking-tighter text-white">MIRAC</div>
+<button class="material-symbols-outlined text-[#C6FF00] active:opacity-80" onclick="document.getElementById('nav-drawer').classList.add('open')">menu</button>
+</header>
+<!-- NavigationDrawer Overlay -->
+<div class="fixed inset-0 z-[110] bg-black flex flex-col justify-center items-center px-12 w-full h-full" id="nav-drawer">
+<button class="absolute top-6 right-6 material-symbols-outlined text-[#C6FF00] text-3xl" onclick="document.getElementById('nav-drawer').classList.remove('open')">close</button>
+<div class="text-white text-2xl font-black tracking-tighter uppercase mb-24 font-headline">MIRAC</div>
+<nav class="flex flex-col items-center gap-12">
+<a class="font-['Space_Grotesk'] text-5xl font-bold tracking-tighter uppercase text-[#C6FF00] hover:text-[#C6FF00] transition-all duration-500" href="#">HOME</a>
+<a class="font-['Space_Grotesk'] text-5xl font-bold tracking-tighter uppercase text-white hover:text-[#C6FF00] transition-all duration-500" href="#">SERVICES</a>
+<a class="font-['Space_Grotesk'] text-5xl font-bold tracking-tighter uppercase text-white hover:text-[#C6FF00] transition-all duration-500" href="#">CONTACT</a>
+</nav>
+</div>
+<main class="pt-16 pb-20 overflow-x-hidden">
+<!-- Section 1: Hero -->
+<section class="relative h-[795px] flex flex-col justify-end items-start px-6 pb-20 overflow-hidden">
+<div class="absolute inset-0 z-0">
+<img alt="Satellite in space" class="w-full h-full object-cover opacity-60 grayscale brightness-50" data-alt="Cinematic shot of a highly detailed realistic satellite orbiting earth in deep space with soft blue lens flare and sharp metallic textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-6YMWnTwcr1fWZSZOWIdlhVIigdHndvGSJvtxtl8iLJp1RNvwMhycwmmFg7kqXp21K5iDrrcutkIrGhJK_-7dV3AXwwbQpjvXdPv2yZrU6tcI9WF9T5FoAiBMlq1_-VLNCTfA0vsWAwC8kNyLAPVC83NMPYEjHJFt5JEvU9W5kbxtIu0IlzVIirks8Pz5gwyilwgnLIJuHK9uJu8QBX1pgPzWukQUk1zqBki_jkzASpDBZD_6juwmyYKZkIFclu9VkqIu9To66zA" style=""/>
+<div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black"></div>
+<!-- Scan Lines Simulation -->
+<div class="scan-line top-1/4"></div>
+<div class="scan-line top-1/2"></div>
+<div class="scan-line top-3/4"></div>
+</div>
+<div class="relative z-10 w-full">
+<h1 class="font-headline text-[22vw] font-extrabold leading-[0.8] tracking-tighter text-white uppercase acid-gradient-text">
+                    MIRAC
+                </h1>
+<p class="font-label text-primary-fixed mt-6 text-sm tracking-[0.2em] uppercase font-bold">
+                    Architecting the future of growth
+                </p>
+</div>
+</section>
+<!-- Section 2: Statement -->
+<section class="py-32 px-6 bg-surface-container-lowest">
+<div class="max-w-xl">
+<h2 class="font-headline text-5xl md:text-7xl font-bold leading-tight tracking-tight text-white mb-12">
+                    Growth is not <span class="text-outline-variant italic">marketing</span>. <br/>
+                    It is a <span class="text-primary-container">system</span>.
+                </h2>
+<div class="w-24 h-px bg-primary-container"></div>
+</div>
+</section>
+<!-- Section 3: Services -->
+<section class="py-24 px-6 space-y-24">
+<div class="flex flex-col gap-4">
+<span class="font-label text-primary-fixed text-xs tracking-widest uppercase">01 / Capabilities</span>
+<div class="h-px w-full bg-outline-variant"></div>
+</div>
+<!-- Service Item -->
+<div class="space-y-6">
+<h3 class="font-headline text-4xl font-bold text-white uppercase tracking-tighter">Marketing</h3>
+<div class="flex flex-wrap gap-x-8 gap-y-4 text-on-surface-variant font-body">
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary-container"></span> Content </span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary-container"></span> SEO </span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary-container"></span> Branding</span>
+</div>
+</div>
+<div class="space-y-6">
+<h3 class="font-headline text-4xl font-bold text-white uppercase tracking-tighter">Technology</h3>
+<div class="flex flex-wrap gap-x-8 gap-y-4 text-on-surface-variant font-body">
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary-container"></span> Cloud Infrastructure</span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary-container"></span> Web3 Ecosystems</span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary-container"></span> AI Integrations</span>
+</div>
+</div>
+<div class="space-y-6">
+<h3 class="font-headline text-4xl font-bold text-white uppercase tracking-tighter">Growth</h3>
+<div class="flex flex-wrap gap-x-8 gap-y-4 text-on-surface-variant font-body">
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary-container"></span> Growth Engineering</span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary-container"></span> Scaling Protocols</span>
+<span class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary-container"></span> Data Architecture</span>
+</div>
+</div>
+</section>
+<!-- Section 4: Process -->
+<section class="py-32 px-6 bg-surface-container">
+<div class="mb-20">
+<h2 class="font-headline text-5xl font-bold text-white uppercase">The Methodology</h2>
+</div>
+<div class="relative flex flex-col items-center">
+<!-- Vertical Line -->
+<div class="absolute left-6 top-0 bottom-0 w-px bg-outline-variant"></div>
+<!-- Steps -->
+<div class="relative w-full pl-16 py-12">
+<div class="absolute left-[20px] top-1/2 -translate-y-1/2 w-2 h-2 bg-primary-container"></div>
+<span class="font-label text-primary-container text-xs mb-2 block">PHASE 01</span>
+<h4 class="font-headline text-6xl font-black text-white italic opacity-20">FIX</h4>
+<p class="text-on-surface-variant mt-4 max-w-xs">Audit existing technical debt and optimize core conversion paths.</p>
+</div>
+<div class="relative w-full pl-16 py-12">
+<div class="absolute left-[20px] top-1/2 -translate-y-1/2 w-2 h-2 bg-primary-container"></div>
+<span class="font-label text-primary-container text-xs mb-2 block">PHASE 02</span>
+<h4 class="font-headline text-6xl font-black text-white italic opacity-50">BUILD</h4>
+<p class="text-on-surface-variant mt-4 max-w-xs">Deploy robust content and engineering systems for predictable flow.</p>
+</div>
+<div class="relative w-full pl-16 py-12">
+<div class="absolute left-[20px] top-1/2 -translate-y-1/2 w-2 h-2 bg-primary-container"></div>
+<span class="font-label text-primary-container text-xs mb-2 block">PHASE 03</span>
+<h4 class="font-headline text-6xl font-black text-white italic">SCALE</h4>
+<p class="text-on-surface-variant mt-4 max-w-xs">Aggressive expansion through automated systems and AI leverage.</p>
+</div>
+</div>
+</section>
+<!-- Section 5: Impact Statements -->
+<section class="py-40 px-6 border-y border-outline-variant">
+<div class="space-y-32">
+<div class="text-right">
+<p class="font-label text-primary-fixed mb-4 text-xs uppercase">Transition 01</p>
+<h3 class="font-headline text-5xl font-bold leading-[0.9] text-white">FROM CHAOS TO STRUCTURE.</h3>
+</div>
+<div class="text-left">
+<p class="font-label text-primary-fixed mb-4 text-xs uppercase">Transition 02</p>
+<h3 class="font-headline text-5xl font-bold leading-[0.9] text-white">FROM TRAFFIC TO REVENUE SYSTEMS.</h3>
+</div>
+</div>
+</section>
+<!-- Section 6: Portfolio -->
+<section class="py-32 px-6">
+<div class="mb-12 flex justify-between items-end">
+<h2 class="font-headline text-3xl font-bold uppercase text-white">Selected Ops</h2>
+<span class="text-on-surface-variant text-xs">VIEW ALL [12]</span>
+</div>
+<div class="grid grid-cols-1 gap-12">
+<!-- Project 1 -->
+<div class="group relative">
+<div class="aspect-[4/5] bg-surface-container-high overflow-hidden">
+<img alt="Quantum Systems" class="w-full h-full object-cover grayscale brightness-75 transition-all group-hover:scale-105" data-alt="Abstract macro shot of high-tech computer circuitry with glowing green lights and deep metallic shadows in monochrome style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBvMRn4sJ8Z3mVyATmbC332UhY0Up8g2EsIwg1zkcdOCrAUhnYEA7Nw_K6y630t-cT8PefmV7WN2B3C-o7GuTmh8NKrW-J3benHYBO-zYsuN_arwHH6z8a4xF7kY_LCGOqamwG3HvvzVmbA07xhNAhuoPfbwu1UJ8ztz5TMWw6dI_efG4p4OrCHXPmJaGPtQFR5bmqHstD1FQgw1gJwmNNSOlP8bqrQllyrJpzcBW4tW9tZAwivKBmItv2QoWbCwp53Tj5WWUNFM0Y"/>
+</div>
+<div class="mt-6 flex justify-between items-start">
+<div>
+<h4 class="font-headline text-xl font-bold text-white uppercase">Quantum Systems</h4>
+<p class="text-on-surface-variant text-sm mt-1">Infrastructure Design</p>
+</div>
+<span class="material-symbols-outlined text-primary-container">arrow_outward</span>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="group relative">
+<div class="aspect-[4/5] bg-surface-container-high overflow-hidden">
+<img alt="Nexus Flow" class="w-full h-full object-cover grayscale brightness-75 transition-all group-hover:scale-105" data-alt="Digital representation of complex network data flows in deep space aesthetic with sharp linear patterns and high contrast lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCU4MjlpFZjV7PYRy9sRhbIRpwov9wFuEfkBvna0jNLYfUztdQTYitPSjENgaKrzQYv7Zj09dywr4BU3KbgRUxEqQE-zmtPe8aaUP_2eoyWCdqIznP39P31552lbzMjzsvT3kh0eoAJzsK3jQov0JuX7hAo_Us8HzxRNpadTud4SJNnp4-yzTSjGeAmWP0omPQRQYm8kyrn8wqJ8xmN4_1F0fmhp0EgD6EBoPk9H_2jtq6eZdq5qA86dAgkNai-8FqknjLyzvFmRJ0"/>
+</div>
+<div class="mt-6 flex justify-between items-start">
+<div>
+<h4 class="font-headline text-xl font-bold text-white uppercase">Nexus Flow</h4>
+<p class="text-on-surface-variant text-sm mt-1">Growth Protocol</p>
+</div>
+<span class="material-symbols-outlined text-primary-container">arrow_outward</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: Final CTA -->
+<section class="py-40 px-6 bg-primary-container text-on-primary text-center">
+<h2 class="font-headline text-7xl font-black leading-[0.8] tracking-tighter uppercase mb-12">
+                BUILD SYSTEMS THAT SCALE
+            </h2>
+<button class="inline-flex items-center gap-4 border-2 border-on-primary px-8 py-4 font-headline font-bold text-2xl group transition-all hover:bg-on-primary hover:text-primary-container">
+                START 
+                <span class="material-symbols-outlined font-bold">arrow_forward</span>
+</button>
+</section>
+<!-- Footer Info -->
+<footer class="py-20 px-6 bg-black text-center space-y-12">
+<div class="text-white opacity-20 font-headline text-6xl font-bold select-none">MIRAC</div>
+<div class="flex justify-center gap-8 text-xs font-label uppercase tracking-widest text-on-surface-variant">
+<span>Instagram</span>
+<span>LinkedIn</span>
+<span>X / Twitter</span>
+</div>
+<p class="text-[10px] text-zinc-600 font-label uppercase tracking-widest">© 2024 MIRAC SYSTEMS INT. ALL RIGHTS RESERVED.</p>
+</footer>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center bg-black h-20 rounded-none border-t border-zinc-800 z-50">
+<a class="flex flex-col items-center justify-center text-lime-400 bg-transparent border-t-2 border-lime-400 pt-2 pb-4" href="#">
+<span class="material-symbols-outlined mb-1">movie</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-widest">Work</span>
+</a>
+<a class="flex flex-col items-center justify-center text-zinc-500 pt-2 pb-4 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined mb-1">menu_book</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-widest">SERVICES</span>
+</a>
+<a class="flex flex-col items-center justify-center text-zinc-500 pt-2 pb-4 hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined mb-1">mail</span>
+<span class="font-['Space_Grotesk'] text-[10px] uppercase font-bold tracking-widest">Contact</span>
+</a>
+</nav>
+</body></html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MIRAC | CONTACT</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&amp;family=Manrope:wght@200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #000000;
+            color: #ffffff;
+        }
+        ::placeholder {
+            color: #757575;
+            opacity: 0.5;
+        }
+        input:-webkit-autofill,
+        input:-webkit-autofill:hover, 
+        input:-webkit-autofill:focus {
+            -webkit-text-fill-color: #ffffff;
+            -webkit-box-shadow: 0 0 0px 1000px #000000 inset;
+            transition: background-color 5000s ease-in-out 0s;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary": "#675a00",
+                      "on-secondary-fixed": "#424200",
+                      "secondary": "#e9e958",
+                      "error": "#ff7351",
+                      "surface": "#0e0e0e",
+                      "on-error-container": "#ffd2c8",
+                      "surface-variant": "#262626",
+                      "on-surface-variant": "#ababab",
+                      "background": "#0e0e0e",
+                      "secondary-fixed": "#e9e958",
+                      "surface-container": "#191919",
+                      "surface-container-high": "#1f1f1f",
+                      "secondary-container": "#626200",
+                      "tertiary": "#fff1b2",
+                      "surface-container-lowest": "#000000",
+                      "primary-fixed-dim": "#b9ef00",
+                      "error-dim": "#d53d18",
+                      "surface-tint": "#f3ffcd",
+                      "on-background": "#ffffff",
+                      "on-tertiary-fixed-variant": "#685c00",
+                      "on-secondary-fixed-variant": "#5f5f00",
+                      "surface-dim": "#0e0e0e",
+                      "surface-container-highest": "#262626",
+                      "on-error": "#450900",
+                      "secondary-fixed-dim": "#dbdb4b",
+                      "surface-container-low": "#131313",
+                      "on-primary-fixed": "#384b00",
+                      "tertiary-container": "#fce34b",
+                      "on-tertiary-fixed": "#493f00",
+                      "on-surface": "#ffffff",
+                      "error-container": "#b92902",
+                      "surface-bright": "#2c2c2c",
+                      "primary-container": "#c5fe00",
+                      "outline-variant": "#484848",
+                      "on-primary-fixed-variant": "#506900",
+                      "on-primary": "#4f6700",
+                      "primary-fixed": "#c5fe00",
+                      "inverse-on-surface": "#555555",
+                      "tertiary-fixed": "#fce34b",
+                      "inverse-surface": "#f9f9f9",
+                      "outline": "#757575",
+                      "on-primary-container": "#485e00",
+                      "primary": "#f3ffcd",
+                      "on-tertiary-container": "#5d5200",
+                      "secondary-dim": "#dbdb4b",
+                      "tertiary-fixed-dim": "#eed53e",
+                      "on-secondary": "#555500",
+                      "primary-dim": "#b9ef00",
+                      "on-secondary-container": "#ffff6b",
+                      "tertiary-dim": "#eed53e",
+                      "inverse-primary": "#4f6700"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0rem",
+                      "lg": "0rem",
+                      "xl": "0rem",
+                      "full": "0rem"
+              },
+              "fontFamily": {
+                      "headline": ["Space Grotesk"],
+                      "body": ["Manrope"],
+                      "label": ["Manrope"]
+              }
+            },
+          },
+        }
+    </script>
+</head>
+<body class="font-body selection:bg-primary-container selection:text-black">
+<!-- TopNavBar -->
+<nav class="bg-black text-[#C6FF00] font-['Space_Grotesk'] uppercase tracking-tighter docked full-width top-0 border-b border-[#484848] border-opacity-50 flat no shadows flex justify-between items-center w-full px-6 py-8 max-w-full mx-auto fixed z-[100]">
+<div class="text-3xl font-bold tracking-tighter text-white">MIRAC</div>
+<div class="hidden md:flex items-center space-x-12">
+<a class="text-white opacity-80 hover:text-[#C6FF00] transition-colors duration-200 scale-95 active:opacity-70 transition-transform" href="#">HOME</a>
+<a class="text-white opacity-80 hover:text-[#C6FF00] transition-colors duration-200 scale-95 active:opacity-70 transition-transform" href="#">SERVICES</a>
+<a class="text-[#C6FF00] border-b-2 border-[#C6FF00] pb-1 hover:text-[#C6FF00] transition-colors duration-200 scale-95 active:opacity-70 transition-transform" href="#">CONTACT</a>
+</div>
+<div class="flex items-center">
+<button class="text-white">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<main class="pt-32 min-h-screen flex flex-col">
+<!-- Hero Section -->
+<section class="px-6 py-12 md:py-20 border-b border-outline-variant">
+<div class="max-w-7xl mx-auto">
+<h1 class="font-headline font-black text-7xl md:text-[10rem] leading-[0.85] tracking-tighter uppercase mb-8">
+                    Contact
+                </h1>
+<p class="font-headline text-2xl md:text-5xl tracking-tight text-on-surface-variant max-w-4xl">
+                    Let’s build something that scales.
+                </p>
+</div>
+</section>
+<!-- Split Screen Layout -->
+<section class="flex-grow flex flex-col md:flex-row">
+<!-- Left Column: Contact Info -->
+<div class="w-full md:w-1/2 border-r border-outline-variant p-6 md:p-12 flex flex-col justify-between">
+<div class="space-y-24">
+<div class="space-y-4">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-outline">Direct Inquiries</span>
+<a class="block font-headline text-3xl md:text-5xl hover:text-primary-container transition-colors" href="mailto:hello@mirac.com">hello@mirac.com</a>
+</div>
+<div class="space-y-4">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-outline">Voice</span>
+<p class="font-headline text-3xl md:text-5xl">+92 XXX XXX XXXX</p>
+</div>
+<div class="space-y-4">
+<span class="font-label text-xs uppercase tracking-[0.2em] text-outline">Operating From</span>
+<div class="flex flex-col space-y-2">
+<span class="font-headline text-3xl md:text-4xl">Pakistan</span>
+<span class="font-headline text-3xl md:text-4xl text-outline">/ UAE</span>
+</div>
+</div>
+</div>
+<div class="mt-20">
+<img alt="MIRAC Studio" class="w-full aspect-[16/9] object-cover filter grayscale contrast-125" data-alt="Interior of a brutalist concrete office with sharp shadows, floor to ceiling windows, and minimal black furniture at night" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9wgq2Wc9qjxLUgdF9YMAtm9otizoGY6a1z4HKAz0Dn9pjRki5tV8OsjgWV3ydd4grljDCg6Xvgj2hlfOT1QLsORJXBIgbLfOZCeF3Fpv-cz5kj3W02gcACuQn2ZJXS4adBypcL5NShG_DCed667uPAgLIbHN0MkMIrxlMk2D1nbicDD7kcEoWPqJEON1avoe7QMGsBF_kHLtCRgIGpfS_9W6lwHT62bInXoJR1ojJn876PFfGUDp5S8LKiCLdoVVy9NM9L6PBYmc"/>
+</div>
+</div>
+<!-- Right Column: Form -->
+<div class="w-full md:w-1/2 p-6 md:p-12 bg-surface">
+<form id="contact-form-desktop" class="space-y-12 max-w-xl mx-auto md:mx-0">
+<div class="relative group">
+<label class="block font-label text-xs uppercase tracking-widest text-outline mb-2 transition-colors group-focus-within:text-primary-container">Full Name</label>
+<input id="d-name" class="w-full bg-transparent border-0 border-b border-outline py-4 px-0 focus:ring-0 focus:border-primary-container font-headline text-xl transition-all outline-none" placeholder="YOUR NAME" type="text"/>
+<p id="derr-name" class="mt-1 text-[10px] text-[#ff7351] uppercase tracking-widest hidden"></p>
+</div>
+<div class="relative group">
+<label class="block font-label text-xs uppercase tracking-widest text-outline mb-2 transition-colors group-focus-within:text-primary-container">Email Address</label>
+<input id="d-email" class="w-full bg-transparent border-0 border-b border-outline py-4 px-0 focus:ring-0 focus:border-primary-container font-headline text-xl transition-all outline-none" placeholder="EMAIL@DOMAIN.COM" type="email"/>
+<p id="derr-email" class="mt-1 text-[10px] text-[#ff7351] uppercase tracking-widest hidden"></p>
+</div>
+<div class="relative group">
+<label class="block font-label text-xs uppercase tracking-widest text-outline mb-2 transition-colors group-focus-within:text-primary-container">Project Type</label>
+<select id="d-type" class="w-full bg-transparent border-0 border-b border-outline py-4 px-0 focus:ring-0 focus:border-primary-container font-headline text-xl transition-all outline-none appearance-none cursor-pointer">
+<option class="bg-black text-white" value="">SELECT TYPE</option>
+<option class="bg-black text-white" value="Editorial Design">EDITORIAL DESIGN</option>
+<option class="bg-black text-white" value="Brand Architecture">BRAND ARCHITECTURE</option>
+<option class="bg-black text-white" value="Digital Ecosystem">DIGITAL SYSTEMS</option>
+<option class="bg-black text-white" value="Strategic Consulting">STRATEGIC CONSULTING</option>
+</select>
+<span class="material-symbols-outlined absolute right-0 bottom-4 text-outline pointer-events-none" data-icon="expand_more">expand_more</span>
+<p id="derr-type" class="mt-1 text-[10px] text-[#ff7351] uppercase tracking-widest hidden"></p>
+</div>
+<div class="relative group">
+<label class="block font-label text-xs uppercase tracking-widest text-outline mb-2 transition-colors group-focus-within:text-primary-container">The Brief</label>
+<textarea id="d-brief" class="w-full bg-transparent border-0 border-b border-outline py-4 px-0 focus:ring-0 focus:border-primary-container font-headline text-xl transition-all outline-none resize-none" placeholder="DESCRIBE YOUR VISION" rows="4"></textarea>
+<p id="derr-brief" class="mt-1 text-[10px] text-[#ff7351] uppercase tracking-widest hidden"></p>
+</div>
+<!-- Status banner -->
+<div id="d-form-status" class="hidden text-[10px] uppercase tracking-widest py-3 px-4 border font-bold font-label"></div>
+<div class="pt-8">
+<button id="d-submit-btn" class="group flex items-center space-x-6 hover:opacity-80 transition-all" type="submit">
+<span id="d-submit-label" class="font-headline font-black text-4xl md:text-5xl uppercase tracking-tighter text-primary-container">Send Inquiry</span>
+<span class="material-symbols-outlined text-primary-container text-5xl group-hover:translate-x-4 transition-transform" data-icon="arrow_right_alt">arrow_right_alt</span>
+</button>
+</div>
+</form>
+<script>
+(function () {
+  var form = document.getElementById('contact-form-desktop');
+  var btn = document.getElementById('d-submit-btn');
+  var label = document.getElementById('d-submit-label');
+  var status = document.getElementById('d-form-status');
+
+  function setError(id, msg) {
+    var el = document.getElementById('derr-' + id);
+    if (!el) return;
+    if (msg) { el.textContent = msg; el.classList.remove('hidden'); }
+    else { el.textContent = ''; el.classList.add('hidden'); }
+  }
+
+  function clearErrors() {
+    ['name','email','type','brief'].forEach(function(k){ setError(k, ''); });
+  }
+
+  function showStatus(msg, isError) {
+    status.textContent = msg;
+    status.className = 'text-[10px] uppercase tracking-widest py-3 px-4 border font-bold font-label';
+    if (isError) {
+      status.classList.add('border-[#ff7351]','text-[#ff7351]');
+    } else {
+      status.classList.add('border-[#C6FF00]','text-[#C6FF00]');
+    }
+    status.classList.remove('hidden');
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    clearErrors();
+    status.classList.add('hidden');
+
+    var name = document.getElementById('d-name').value.trim();
+    var email = document.getElementById('d-email').value.trim();
+    var projectType = document.getElementById('d-type').value;
+    var brief = document.getElementById('d-brief').value.trim();
+
+    btn.disabled = true;
+    label.textContent = 'SENDING...';
+
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name: name, email: email, projectType: projectType, brief: brief })
+    })
+    .then(function(res) { return res.json().then(function(d){ return { ok: res.ok, data: d }; }); })
+    .then(function(result) {
+      btn.disabled = false;
+      if (result.ok) {
+        label.textContent = 'INQUIRY SENT';
+        showStatus('Inquiry received — we will be in contact shortly.', false);
+        form.reset();
+      } else {
+        label.textContent = 'SEND INQUIRY';
+        var errs = result.data.errors || {};
+        Object.keys(errs).forEach(function(k){ setError(k, errs[k]); });
+        if (result.data.error) showStatus(result.data.error, true);
+      }
+    })
+    .catch(function() {
+      btn.disabled = false;
+      label.textContent = 'SEND INQUIRY';
+      showStatus('Connection failed. Please try again.', true);
+    });
+  });
+})();
+</script>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-black text-[#C6FF00] font-['Manrope'] text-xs uppercase tracking-widest w-full border-t border-[#484848] flat no shadows flex flex-col md:flex-row justify-between items-center w-full px-6 py-12">
+<div class="text-lg font-bold text-white mb-6 md:mb-0">MIRAC</div>
+<div class="flex space-x-8 mb-6 md:mb-0">
+<a class="text-white opacity-50 hover:opacity-100 hover:text-[#C6FF00] underline decoration-1" href="#">INSTAGRAM</a>
+<a class="text-white opacity-50 hover:opacity-100 hover:text-[#C6FF00] underline decoration-1" href="#">TWITTER</a>
+<a class="text-white opacity-50 hover:opacity-100 hover:text-[#C6FF00] underline decoration-1" href="#">LINKEDIN</a>
+</div>
+<div class="text-white opacity-50">© 2024 MIRAC. ALL RIGHTS RESERVED.</div>
+</footer>
+<!-- Location Context Image (Hidden visually but provides semantic weight) -->
+<div class="hidden">
+<img data-alt="Abstract cityscape of Dubai at night with futuristic glowing lights and sharp architectural lines in a monochrome high contrast style" data-location="Dubai" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGuK9eXvRrEQ97KTLoHen0driT2zQR4r7cnDvsjriJy1sRJWdpRQ1Qt7vZGJ9fSYhxd-DRLWGvE4oXit-odiy4p1iFFhAYfnXlIeuXn-Ge7LHkR5cMHJgZGD-hICsr6kfVPgaruqkJivVU7FVCFFnX35F5fAsYR9XYt8eSuShrpZUd7U_KFzNOkWekCYi7DjKKQpewpS45ubWEu-Y1zfRzNp8fkwk2k-7Yh63-YS1LTqNhpmdEc0TNFgGKSprYxZU7La9A7_MNuJA"/>
+<img data-alt="Monochrome landscape of Margalla Hills with mist and sharp structural silhouettes under a dramatic dark sky" data-location="Islamabad" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDz-EKsvPhRWQEG3r2Tzg9vBEuKAG1OmAUmAvWmxhz5u9NQvaby3XNMBIpNgIlvoqgEb2q_OmCtpfdR1uzmGmuBTLTZaW5LxatEIQxeQS0D1xKQqrRtZ-r2I4D4CTBncC6g2aJZBtNvmX0TV2h2zrDJIm20MCLbLS4quuLF2mfiLrD5CUHHN1TzOjTQ6OdneIqhvTeUQFbm5zdBfc_V4vDd4OShnT8WwZAMWXZwbn5CpXToxxXHwM6K4P5ogsrg6OHzYcFzLwK5RUs"/>
+</div>
+</body></html>

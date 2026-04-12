@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MIRAC | CONTACT</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error-dim": "#d53d18",
+                        "surface-container": "#191919",
+                        "primary-fixed": "#c5fe00",
+                        "on-tertiary-fixed-variant": "#685c00",
+                        "on-surface-variant": "#ababab",
+                        "surface": "#0e0e0e",
+                        "primary-container": "#c5fe00",
+                        "secondary-container": "#626200",
+                        "on-primary-fixed-variant": "#506900",
+                        "surface-variant": "#262626",
+                        "on-primary-container": "#485e00",
+                        "on-tertiary-container": "#5d5200",
+                        "surface-container-lowest": "#000000",
+                        "tertiary-fixed-dim": "#eed53e",
+                        "on-secondary-fixed": "#424200",
+                        "on-primary-fixed": "#384b00",
+                        "surface-container-highest": "#262626",
+                        "primary-dim": "#b9ef00",
+                        "surface-tint": "#f3ffcd",
+                        "outline": "#757575",
+                        "tertiary-dim": "#eed53e",
+                        "primary-fixed-dim": "#b9ef00",
+                        "secondary-fixed": "#e9e958",
+                        "secondary-dim": "#dbdb4b",
+                        "secondary-fixed-dim": "#dbdb4b",
+                        "primary": "#f3ffcd",
+                        "outline-variant": "#484848",
+                        "on-error": "#450900",
+                        "surface-bright": "#2c2c2c",
+                        "surface-dim": "#0e0e0e",
+                        "error": "#ff7351",
+                        "on-surface": "#ffffff",
+                        "on-tertiary": "#675a00",
+                        "inverse-primary": "#4f6700",
+                        "on-secondary-fixed-variant": "#5f5f00",
+                        "on-error-container": "#ffd2c8",
+                        "inverse-surface": "#f9f9f9",
+                        "on-tertiary-fixed": "#493f00",
+                        "tertiary-container": "#fce34b",
+                        "on-secondary": "#555500",
+                        "inverse-on-surface": "#555555",
+                        "tertiary-fixed": "#fce34b",
+                        "secondary": "#e9e958",
+                        "on-background": "#ffffff",
+                        "surface-container-low": "#131313",
+                        "on-secondary-container": "#ffff6b",
+                        "error-container": "#b92902",
+                        "surface-container-high": "#1f1f1f",
+                        "tertiary": "#fff1b2",
+                        "on-primary": "#4f6700",
+                        "background": "#0e0e0e"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "0px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Space Grotesk"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        ::placeholder {
+            color: #484848 !important;
+            opacity: 1;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+        }
+        input:focus, textarea:focus {
+            outline: none;
+            border-bottom-color: #c5fe00 !important;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-surface-container-lowest text-on-background font-body selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopAppBar -->
+<header class="w-full top-0 border-b-0 flex justify-between items-center px-6 py-4 w-full bg-black">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-[#C6FF00] scale-95 active:opacity-80 transition-colors">arrow_back</span>
+<h1 class="text-xl font-bold text-white font-['Space_Grotesk'] uppercase tracking-tighter">CONTACT</h1>
+</div>
+<div class="w-8 h-8 flex items-center justify-center">
+<div class="w-6 h-[2px] bg-[#C6FF00] relative before:content-[''] before:absolute before:w-6 before:h-[2px] before:bg-[#C6FF00] before:-top-2 after:content-[''] after:absolute after:w-6 after:h-[2px] after:bg-[#C6FF00] after:top-2"></div>
+</div>
+</header>
+<main class="px-6 pb-32">
+<!-- Hero Section -->
+<section class="pt-12 pb-8">
+<h2 class="text-[5rem] leading-[0.85] font-bold font-headline tracking-tighter uppercase mb-4 text-[#C6FF00]">
+                CONTACT
+            </h2>
+<p class="text-xl font-headline font-light max-w-[280px] leading-tight text-white uppercase italic">
+                Let’s build something that scales.
+            </p>
+</section>
+<!-- Divider -->
+<div class="w-full h-px bg-[#484848] mb-12"></div>
+<!-- Contact Form -->
+<form class="space-y-12" id="contact-form-mobile">
+<div class="relative group">
+<label class="block text-[10px] font-bold uppercase tracking-[0.2em] text-outline mb-2">01 / NAME</label>
+<input id="f-name" class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-[#484848] py-4 text-2xl font-headline uppercase focus:ring-0 transition-all placeholder:font-body" placeholder="Your Name or Entity" type="text"/>
+<p id="err-name" class="mt-1 text-[10px] text-[#ff7351] uppercase tracking-widest hidden"></p>
+</div>
+<div class="relative group">
+<label class="block text-[10px] font-bold uppercase tracking-[0.2em] text-outline mb-2">02 / EMAIL</label>
+<input id="f-email" class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-[#484848] py-4 text-2xl font-headline uppercase focus:ring-0 transition-all placeholder:font-body" placeholder="reach@out.com" type="email"/>
+<p id="err-email" class="mt-1 text-[10px] text-[#ff7351] uppercase tracking-widest hidden"></p>
+</div>
+<div class="relative group">
+<label class="block text-[10px] font-bold uppercase tracking-[0.2em] text-outline mb-2">03 / PROJECT TYPE</label>
+<select id="f-type" class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-[#484848] py-4 text-2xl font-headline uppercase focus:ring-0 transition-all appearance-none cursor-pointer">
+<option class="bg-black" value="Digital Ecosystem">DIGITAL ECOSYSTEM</option>
+<option class="bg-black" value="Brand Architecture">BRAND ARCHITECTURE</option>
+<option class="bg-black" value="Product Design">PRODUCT DESIGN</option>
+<option class="bg-black" value="Scalable Dev">SCALABLE DEV</option>
+</select>
+<div class="absolute right-0 bottom-4 pointer-events-none">
+<span class="material-symbols-outlined text-[#C6FF00]">keyboard_arrow_down</span>
+</div>
+<p id="err-type" class="mt-1 text-[10px] text-[#ff7351] uppercase tracking-widest hidden"></p>
+</div>
+<div class="relative group">
+<label class="block text-[10px] font-bold uppercase tracking-[0.2em] text-outline mb-2">04 / BRIEF</label>
+<textarea id="f-brief" class="w-full bg-transparent border-t-0 border-l-0 border-r-0 border-b border-[#484848] py-4 text-2xl font-headline uppercase focus:ring-0 transition-all placeholder:font-body resize-none" placeholder="Tell us about the vision" rows="3"></textarea>
+<p id="err-brief" class="mt-1 text-[10px] text-[#ff7351] uppercase tracking-widest hidden"></p>
+</div>
+<!-- Status banner -->
+<div id="form-status" class="hidden text-[10px] uppercase tracking-widest py-3 px-4 border font-bold"></div>
+<!-- CTA -->
+<button id="submit-btn" class="w-full bg-[#C6FF00] text-black py-8 text-2xl font-bold font-headline uppercase tracking-tight flex justify-between items-center px-6 active:scale-95 transition-transform" type="submit">
+<span id="submit-label">SEND INQUIRY</span>
+<span class="material-symbols-outlined text-3xl">arrow_outward</span>
+</button>
+</form>
+<script>
+(function () {
+  var form = document.getElementById('contact-form-mobile');
+  var btn = document.getElementById('submit-btn');
+  var label = document.getElementById('submit-label');
+  var status = document.getElementById('form-status');
+
+  function setError(id, msg) {
+    var el = document.getElementById('err-' + id);
+    if (!el) return;
+    if (msg) { el.textContent = msg; el.classList.remove('hidden'); }
+    else { el.textContent = ''; el.classList.add('hidden'); }
+  }
+
+  function clearErrors() {
+    ['name','email','type','brief'].forEach(function(k){ setError(k, ''); });
+  }
+
+  function showStatus(msg, isError) {
+    status.textContent = msg;
+    status.className = 'text-[10px] uppercase tracking-widest py-3 px-4 border font-bold';
+    if (isError) {
+      status.classList.add('border-[#ff7351]','text-[#ff7351]','bg-[#ff7351]/10');
+    } else {
+      status.classList.add('border-[#C6FF00]','text-[#C6FF00]','bg-[#C6FF00]/10');
+    }
+    status.classList.remove('hidden');
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    clearErrors();
+    status.classList.add('hidden');
+
+    var name = document.getElementById('f-name').value.trim();
+    var email = document.getElementById('f-email').value.trim();
+    var projectType = document.getElementById('f-type').value;
+    var brief = document.getElementById('f-brief').value.trim();
+
+    btn.disabled = true;
+    label.textContent = 'SENDING...';
+
+    fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name: name, email: email, projectType: projectType, brief: brief })
+    })
+    .then(function(res) { return res.json().then(function(d){ return { ok: res.ok, data: d }; }); })
+    .then(function(result) {
+      btn.disabled = false;
+      if (result.ok) {
+        label.textContent = 'INQUIRY SENT';
+        btn.classList.remove('bg-[#C6FF00]','text-black');
+        btn.classList.add('bg-transparent','border','border-[#C6FF00]','text-[#C6FF00]');
+        showStatus('Inquiry received — we will be in contact shortly.', false);
+        form.reset();
+      } else {
+        label.textContent = 'SEND INQUIRY';
+        var errs = result.data.errors || {};
+        Object.keys(errs).forEach(function(k){ setError(k, errs[k]); });
+        if (result.data.error) showStatus(result.data.error, true);
+      }
+    })
+    .catch(function() {
+      btn.disabled = false;
+      label.textContent = 'SEND INQUIRY';
+      showStatus('Connection failed. Please try again.', true);
+    });
+  });
+})();
+</script>
+<!-- Footer Info -->
+<section class="mt-20 space-y-10">
+<div class="w-full h-px bg-[#484848]"></div>
+<div class="grid grid-cols-2 gap-8">
+<div class="space-y-4">
+<h3 class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C6FF00]">CONNECT</h3>
+<div class="space-y-2">
+<a class="block text-sm font-headline uppercase border-b border-transparent hover:border-[#C6FF00] transition-all" href="mailto:hello@mirac.com">hello@mirac.com</a>
+<p class="text-sm font-headline uppercase">+92 300 123 4567</p>
+</div>
+</div>
+<div class="space-y-4 text-right">
+<h3 class="text-[10px] font-bold uppercase tracking-[0.2em] text-[#C6FF00]">LOCATION</h3>
+<div class="space-y-2">
+<p class="text-sm font-headline uppercase">PAKISTAN / UAE</p>
+<p class="text-sm font-headline uppercase text-outline">GMT +5 / GMT +4</p>
+</div>
+</div>
+</div>
+<!-- Image Asset for Branding -->
+<div class="w-full h-48 bg-surface-container overflow-hidden">
+<img alt="MIRAC Dynamic Brand Element" class="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-500" data-alt="Abstract architectural minimalist structure with neon green lighting against deep black shadows and geometric lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqvhAo8v3j0Ej6C0LnMK5jFDZVce78HN-uTRzw2j5JuZ8k8qA55vrLtySGYauA_l7HU2PgPcWJfquWzgMjtHzTigAoMW-FgfHLi-SD_46nZM5RYooH9Uhbt_DJtpebW5auEP68BuP8OOEDkdAIWAeoumtomvnBzTGUyYFXQedCdlvCQJ2ix_cglGb9QOTw-1p2rZHECfsUc4pgnYA7wY0Sxd6C1FkBfZgLrxmkG_yoxHl25cmTI4wd1onD0Kcb4jghjnez1yCLw2c"/>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-4 pb-6 bg-black border-t border-[#484848]">
+<a class="flex flex-col items-center justify-center text-white/50 pt-2 hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">grid_view</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-widest mt-1">INDEX</span>
+</a>
+<a class="flex flex-col items-center justify-center text-white/50 pt-2 hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">visibility</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-widest mt-1">WORK</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#C6FF00] border-t-2 border-[#C6FF00] pt-2 transition-all" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">mail</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-widest mt-1">CONTACT</span>
+</a>
+<a class="flex flex-col items-center justify-center text-white/50 pt-2 hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined">info</span>
+<span class="font-['Manrope'] text-[10px] font-bold uppercase tracking-widest mt-1">INFO</span>
+</a>
+</nav>
+</body></html>
