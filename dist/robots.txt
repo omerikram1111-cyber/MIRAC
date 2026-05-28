@@ -1,4 +1,28 @@
 User-agent: *
 Allow: /
+Allow: /sitemap.xml
+Allow: /llms.txt
+
+# AI Crawlers - explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
 Sitemap: https://www.miractechnologies.com/sitemap.xml
-Disallow: /private/

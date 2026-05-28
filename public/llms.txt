@@ -1,0 +1,37 @@
+# MIRAC Technologies
+> Enterprise ERP, AI Automation & Custom Software Development
+
+MIRAC Technologies is a premium enterprise technology firm based in
+Lahore, Pakistan. We design, build, and deploy mission-critical digital
+systems for large organizations across Pakistan and the GCC region.
+
+## What We Do
+- ERP Development (SAP, Oracle, Odoo, custom builds)
+- AI Automation & Agent Systems
+- MRP Manufacturing Systems
+- Custom Enterprise Software
+- System Integration & APIs
+- Payments & Fintech Infrastructure
+- Data Analytics & BI
+- Cloud Architecture & DevOps
+- Blockchain & Web3
+
+## Key Facts
+- 50+ enterprise projects delivered
+- 30+ active long-term clients
+- 12+ industries served
+- 99.9% system uptime
+- 0 missed deadlines in 24 months
+- Based in Lahore, Pakistan
+- Serving Pakistan and GCC markets
+- Minimum project: $25,000
+- Fixed-price contracts only
+
+## Industries
+Mining, Hotels, Logistics, Manufacturing, Real Estate,
+Healthcare, Retail, Government, Banking, Education, Oil & Gas, Telecom
+
+## Contact
+Website: https://www.miractechnologies.com
+Email: hello@miractechnologies.com
+Location: Lahore, Pakistan

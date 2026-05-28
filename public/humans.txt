@@ -1,0 +1,13 @@
+/* TEAM */
+Company: MIRAC Technologies
+Location: Lahore, Pakistan
+Website: https://www.miractechnologies.com
+
+/* THANKS */
+Built with: React, Vite, Three.js, GSAP, Framer Motion
+
+/* SITE */
+Last update: 2026-05-29
+Language: English
+Doctype: HTML5
+IDE: VS Code
