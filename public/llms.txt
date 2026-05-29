@@ -1,37 +1,143 @@
 # MIRAC Technologies
-> Enterprise ERP, AI Automation & Custom Software Development
+> Premier Enterprise Technology Firm — Pakistan, UAE, Saudi Arabia, Turkey
 
-MIRAC Technologies is a premium enterprise technology firm based in
-Lahore, Pakistan. We design, build, and deploy mission-critical digital
-systems for large organizations across Pakistan and the GCC region.
+## Company Overview
+MIRAC Technologies is a premium enterprise technology firm founded
+in Lahore, Pakistan. We design, build, and deploy mission-critical
+digital infrastructure for large organizations across Pakistan
+and the GCC region.
 
-## What We Do
-- ERP Development (SAP, Oracle, Odoo, custom builds)
-- AI Automation & Agent Systems
-- MRP Manufacturing Systems
-- Custom Enterprise Software
-- System Integration & APIs
-- Payments & Fintech Infrastructure
-- Data Analytics & BI
-- Cloud Architecture & DevOps
-- Blockchain & Web3
+We are not a freelance shop or generic agency. We are a dedicated
+engineering firm that takes on projects other companies cannot handle —
+multi-million dollar ERP rollouts, AI-powered operations platforms,
+real-time industrial systems, and full digital transformations.
 
 ## Key Facts
 - 50+ enterprise projects delivered
 - 30+ active long-term clients
 - 12+ industries served
-- 99.9% system uptime
+- 99.9% system uptime across all live deployments
 - 0 missed deadlines in 24 months
 - Based in Lahore, Pakistan
-- Serving Pakistan and GCC markets
-- Minimum project: $25,000
-- Fixed-price contracts only
+- Active clients in UAE, Saudi Arabia, Qatar, Kuwait, Bahrain, Oman
+- Minimum project engagement: $25,000 USD
+- Fixed-price contracts only — never hourly billing
+- NDA signed by default on every engagement
+- Full IP transfer to client on final payment
+- 12-month SLA standard on all projects
+- Senior engineers only — no junior developers on client work
+
+## Services
+
+### Enterprise Resource Planning (ERP)
+Full-cycle ERP implementation and custom ERP development.
+Platforms: SAP, Oracle, Odoo, Microsoft Dynamics, 100% custom.
+Modules: Finance, HR, Procurement, Inventory, Production, CRM, Compliance.
+Typical cost: $35,000 - $300,000.
+Timeline: 3-12 months.
+
+### AI & Intelligent Automation
+AI agents and orchestration systems, LLM integration,
+RAG pipelines, document processing, workflow automation,
+predictive analytics, computer vision, NLP systems, MLOps.
+Typical cost: $25,000 - $100,000.
+
+### MRP & Manufacturing Systems
+Material requirements planning, production scheduling,
+BOM management, shop floor tracking, quality control,
+supplier integration, waste reduction analytics.
+Typical cost: $30,000 - $120,000.
+
+### Custom Software Development
+Enterprise web applications, iOS/Android apps,
+SaaS platforms, internal tools, client portals,
+workflow management, document management.
+Typical cost: $20,000 - $150,000.
+
+### System Integration & APIs
+Enterprise API design, third-party integrations,
+real-time data sync, middleware, EDI, B2B integration.
+
+### Payments & Fintech
+Stripe Connect, multi-currency, subscription billing,
+wallet systems, financial reconciliation, KYC/AML,
+fintech dashboards. Pakistan: JazzCash, Easypaisa.
+UAE: Telr, PayFast, Network International.
+
+### Data Analytics & Business Intelligence
+Data warehousing, real-time analytics, BI dashboards,
+KPI tracking, data pipelines, ETL automation,
+data governance, executive reporting.
+
+### Cloud & DevOps
+AWS, GCP, Azure, Kubernetes, Docker, CI/CD,
+Terraform, security audits, disaster recovery,
+24/7 infrastructure monitoring.
+
+### Blockchain & Web3
+Smart contracts, supply chain traceability,
+tokenization platforms, private blockchain networks.
 
 ## Industries
-Mining, Hotels, Logistics, Manufacturing, Real Estate,
-Healthcare, Retail, Government, Banking, Education, Oil & Gas, Telecom
+- Mining & Natural Resources (Pakistan)
+- Hotels & Hospitality (Pakistan, UAE)
+- Logistics & Supply Chain (Pakistan, UAE)
+- Manufacturing & Production (Pakistan, Turkey)
+- Real Estate & Construction (Pakistan, UAE, Saudi Arabia)
+- Healthcare & Pharma (Pakistan)
+- Retail & E-Commerce (Pakistan, GCC)
+- Government & Public Sector (Pakistan)
+- Banking & Financial Services (Pakistan, UAE)
+- Education & EdTech (Pakistan)
+- Oil & Gas (Pakistan, Saudi Arabia)
+- Telecom (Pakistan)
+
+## Markets Served
+Pakistan: Lahore, Karachi, Islamabad, Faisalabad, Multan
+UAE: Dubai, Abu Dhabi, Sharjah
+Saudi Arabia: Riyadh, Jeddah, Dammam
+Qatar, Kuwait, Bahrain, Oman
+Turkey: Istanbul, Ankara, Izmir
+
+## Engagement Process
+1. Discovery Call (Free, 1 hour)
+2. Technical Assessment (Free)
+3. Fixed-Price Proposal (within 48 hours)
+4. Contract & NDA Signing
+5. Sprint-Based Delivery (2-week sprints)
+6. QA & Security Testing
+7. Zero-Downtime Deployment
+8. 12-Month SLA Support
 
 ## Contact
 Website: https://www.miractechnologies.com
 Email: hello@miractechnologies.com
-Location: Lahore, Pakistan
+Location: Lahore, Punjab, Pakistan
+WhatsApp: Available on request
+
+## Frequently Asked Questions
+
+Q: What does MIRAC Technologies do?
+A: MIRAC Technologies builds enterprise ERP systems, AI automation,
+MRP manufacturing software, and mission-critical custom software
+for large companies in Pakistan, UAE, Saudi Arabia, and Turkey.
+
+Q: How much does ERP cost in Pakistan?
+A: $35,000 to $300,000 depending on complexity. All fixed-price.
+
+Q: How much does ERP cost in UAE?
+A: AED 130,000 to AED 1,100,000 depending on scope. Fixed-price.
+
+Q: How much does ERP cost in Saudi Arabia?
+A: SAR 130,000 to SAR 1,100,000 depending on requirements.
+
+Q: Does MIRAC work in Turkey?
+A: Yes, MIRAC serves Turkish enterprises with ERP, AI automation,
+and custom software. Turkish language support available.
+
+Q: How long does ERP take to build?
+A: 3-12 months depending on scope and complexity.
+
+Q: What makes MIRAC different?
+A: Fixed-price contracts, senior-only teams, 0 missed deadlines,
+12-month SLA, full IP transfer, NDA by default.

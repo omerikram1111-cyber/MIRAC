@@ -1,13 +1,48 @@
 User-agent: *
 Allow: /
+Allow: /sitemap-index.xml
 Allow: /sitemap.xml
+Allow: /sitemap-en-pk.xml
+Allow: /sitemap-en-ae.xml
+Allow: /sitemap-ar-ae.xml
+Allow: /sitemap-ar-sa.xml
+Allow: /sitemap-tr-tr.xml
 Allow: /llms.txt
+Allow: /erp-development-pakistan.html
+Allow: /ai-automation-pakistan.html
+Allow: /custom-software-development-pakistan.html
+Allow: /erp-development-dubai.html
+Allow: /ai-automation-dubai.html
+Allow: /erp-development-saudi-arabia.html
+Allow: /erp-development-riyadh.html
+Allow: /erp-development-jeddah.html
+Allow: /erp-development-turkey.html
+Allow: /kurumsal-yazilim-turkiye.html
+Allow: /ar/erp-uae.html
+Allow: /ar/erp-saudi.html
+Disallow: /private/
+Disallow: /admin/
 
-# AI Crawlers - explicitly allowed
+# Search Engine Bots
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Slurp
+Allow: /
+
+# AI Crawlers — explicitly allowed for GEO
 User-agent: GPTBot
 Allow: /
 
 User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
 Allow: /
 
 User-agent: PerplexityBot
@@ -16,13 +51,17 @@ Allow: /
 User-agent: GoogleOther
 Allow: /
 
-User-agent: Googlebot
-Allow: /
-
-User-agent: anthropic-ai
-Allow: /
-
 User-agent: cohere-ai
 Allow: /
 
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+Sitemap: https://www.miractechnologies.com/sitemap-index.xml
 Sitemap: https://www.miractechnologies.com/sitemap.xml

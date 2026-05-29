@@ -39,7 +39,13 @@
     <!-- Language -->
     <meta http-equiv="content-language" content="en-PK">
     <link rel="alternate" hreflang="en" href="https://www.miractechnologies.com">
-    <link rel="alternate" hreflang="en-PK" href="https://www.miractechnologies.com">
+    <link rel="alternate" hreflang="en-pk" href="https://www.miractechnologies.com/">
+    <link rel="alternate" hreflang="en-ae" href="https://www.miractechnologies.com/ae/">
+    <link rel="alternate" hreflang="en-sa" href="https://www.miractechnologies.com/sa/">
+    <link rel="alternate" hreflang="ar-ae" href="https://www.miractechnologies.com/ar/ae/">
+    <link rel="alternate" hreflang="ar-sa" href="https://www.miractechnologies.com/ar/sa/">
+    <link rel="alternate" hreflang="tr-tr" href="https://www.miractechnologies.com/tr/">
+    <link rel="alternate" hreflang="x-default" href="https://www.miractechnologies.com/">
 
     <!-- ORGANIZATION SCHEMA -->
     <script type="application/ld+json">
@@ -388,6 +394,58 @@
           "item": "https://www.miractechnologies.com/#contact"
         }
       ]
+    }
+    </script>
+
+    <!-- SITELINKS SEARCHBOX SCHEMA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "url": "https://www.miractechnologies.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.miractechnologies.com/?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- SPEAKABLE SCHEMA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "MIRAC Technologies",
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".hero-headline", ".hero-subtitle", ".company-description"]
+      },
+      "url": "https://www.miractechnologies.com"
+    }
+    </script>
+
+    <!-- EVENT SCHEMA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "Free ERP Discovery Call with MIRAC Technologies",
+      "description": "30-minute free consultation to discuss your ERP or software project requirements.",
+      "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "organizer": {
+        "@type": "Organization",
+        "name": "MIRAC Technologies",
+        "url": "https://www.miractechnologies.com"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock",
+        "url": "https://www.miractechnologies.com/#contact"
+      }
     }
     </script>
     <script type="module" crossorigin src="/assets/index-DQ3bstxS.js"></script>
