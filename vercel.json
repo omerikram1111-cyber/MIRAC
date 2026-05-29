@@ -23,6 +23,11 @@
     {"source": "/small-business-automation-software", "destination": "/small-business-automation-software.html"},
     {"source": "/fintech-software-singapore", "destination": "/fintech-software-singapore.html"},
     {"source": "/bottling-plant-erp", "destination": "/bottling-plant-erp.html"},
+    {"source": "/custom-erp-vs-sap-pakistan", "destination": "/custom-erp-vs-sap-pakistan.html"},
+    {"source": "/custom-erp-vs-odoo", "destination": "/custom-erp-vs-odoo.html"},
+    {"source": "/whatsapp-automation-business", "destination": "/whatsapp-automation-business.html"},
+    {"source": "/about", "destination": "/about.html"},
+    {"source": "/contact", "destination": "/contact.html"},
     {"source": "/(.*)", "destination": "server.js"}
   ]
 }
