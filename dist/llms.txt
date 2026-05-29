@@ -89,3 +89,30 @@
 - **Target buyer**: Bottling factory owner
 - **Keywords**: bottling plant software, beverage manufacturing ERP
 - **Page URL**: https://www.miractechnologies.com/bottling-plant-erp
+
+## Comparison Resources
+- Custom ERP vs SAP: /custom-erp-vs-sap-pakistan
+- Custom ERP vs Odoo: /odoo-vs-custom-erp
+- HubSpot alternative for clinics: /alternatives-to-hubspot-medical-clinics
+- Salesforce alternative Dubai real estate: /salesforce-alternative-real-estate-dubai
+
+## Pricing Guides
+- ERP cost Pakistan 2026: /erp-cost-pakistan-2026
+- Hair transplant software cost: /hair-transplant-software-cost
+- Real estate CRM cost Dubai: /real-estate-crm-cost-dubai
+- Construction ERP cost Saudi: /construction-erp-cost-saudi-arabia
+
+## Problem-Aware Guides
+- Why construction goes over budget Saudi: /why-construction-projects-go-over-budget
+- How to stop losing WhatsApp leads: /how-to-stop-losing-leads-whatsapp
+- International patient management: /international-patient-management-guide
+- Dubai real estate lead management: /dubai-real-estate-lead-management
+
+## City-Level Pages
+Istanbul: /hair-transplant-software-sisli-istanbul
+Dubai: /real-estate-crm-downtown-dubai
+Riyadh: /construction-software-riyadh
+Hamburg: /logistics-software-hamburg
+Munich: /logistics-software-munich
+Maldives: /hotel-software-maldives
+Bali: /hotel-software-bali
