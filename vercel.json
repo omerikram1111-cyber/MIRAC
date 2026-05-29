@@ -6,10 +6,23 @@
       "use": "@vercel/node"
     }
   ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "server.js"
-    }
+  "rewrites": [
+    {"source": "/hair-transplant-clinic-software", "destination": "/hair-transplant-clinic-software.html"},
+    {"source": "/saç-ekimi-klinik-yazilimi", "destination": "/saç-ekimi-klinik-yazilimi.html"},
+    {"source": "/hotel-ai-concierge-software", "destination": "/hotel-ai-concierge-software.html"},
+    {"source": "/real-estate-crm-dubai", "destination": "/real-estate-crm-dubai.html"},
+    {"source": "/real-estate-crm-riyadh", "destination": "/real-estate-crm-riyadh.html"},
+    {"source": "/real-estate-crm-istanbul", "destination": "/real-estate-crm-istanbul.html"},
+    {"source": "/construction-erp-saudi-arabia", "destination": "/construction-erp-saudi-arabia.html"},
+    {"source": "/construction-erp-uae", "destination": "/construction-erp-uae.html"},
+    {"source": "/logistics-software-germany", "destination": "/logistics-software-germany.html"},
+    {"source": "/logistik-software-deutschland", "destination": "/logistik-software-deutschland.html"},
+    {"source": "/recruitment-agency-software", "destination": "/recruitment-agency-software.html"},
+    {"source": "/manufacturing-erp-germany", "destination": "/manufacturing-erp-germany.html"},
+    {"source": "/fertigungs-erp-deutschland", "destination": "/fertigungs-erp-deutschland.html"},
+    {"source": "/small-business-automation-software", "destination": "/small-business-automation-software.html"},
+    {"source": "/fintech-software-singapore", "destination": "/fintech-software-singapore.html"},
+    {"source": "/bottling-plant-erp", "destination": "/bottling-plant-erp.html"},
+    {"source": "/(.*)", "destination": "server.js"}
   ]
 }
