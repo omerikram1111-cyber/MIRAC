@@ -1,0 +1,241 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://www.miractechnologies.com/#organization",
+  "name": "MIRAC Technologies",
+  "legalName": "MIRAC Technologies",
+  "foundingDate": "2020",
+  "foundingLocation": {
+    "@type": "Place",
+    "name": "Lahore, Pakistan"
+  },
+  "url": "https://www.miractechnologies.com",
+  "logo": "https://www.miractechnologies.com/logo.png",
+  "image": "https://www.miractechnologies.com/og-image.jpg",
+  "description": "MIRAC Technologies is a premium enterprise technology firm specializing in ERP development, AI automation, cybersecurity, and mission-critical custom software for enterprises across Pakistan, UAE, Saudi Arabia, Turkey, Germany, and Singapore.",
+  "slogan": "We Engineer What Powers You",
+  "numberOfEmployees": {
+    "@type": "QuantitativeValue",
+    "minValue": 11,
+    "maxValue": 50
+  },
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Lahore",
+    "addressLocality": "Lahore",
+    "addressRegion": "Punjab",
+    "postalCode": "54000",
+    "addressCountry": "PK"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 31.5204,
+    "longitude": 74.3587
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "email": "hello@miractechnologies.com",
+      "availableLanguage": [
+        "English",
+        "Urdu",
+        "Arabic",
+        "Turkish",
+        "German"
+      ]
+    },
+    {
+      "@type": "ContactPoint",
+      "contactType": "customer support",
+      "email": "hello@miractechnologies.com",
+      "hoursAvailable": "Mo-Fr 09:00-18:00"
+    }
+  ],
+  "sameAs": [
+    "https://www.linkedin.com/company/mirac-technologies",
+    "https://twitter.com/miractechnologies",
+    "https://www.crunchbase.com/organization/mirac-technologies",
+    "https://clutch.co/profile/mirac-technologies",
+    "https://www.goodfirms.co/company/mirac-technologies",
+    "https://g2.com/sellers/mirac-technologies"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "MIRAC Enterprise Software & Cybersecurity Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "ERP Development",
+          "description": "Full-cycle ERP implementation and custom development",
+          "provider": {
+            "@id": "https://www.miractechnologies.com/#organization"
+          },
+          "areaServed": [
+            "PK",
+            "AE",
+            "SA",
+            "TR",
+            "DE",
+            "SG"
+          ],
+          "offers": {
+            "@type": "Offer",
+            "priceRange": "$25,000 - $300,000"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "AI Automation",
+          "description": "AI agents, LLM integration, workflow automation",
+          "offers": {
+            "@type": "Offer",
+            "priceRange": "$25,000 - $100,000"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Cybersecurity Services",
+          "description": "Security audits, penetration testing, NCA/SAMA/GDPR compliance",
+          "offers": {
+            "@type": "Offer",
+            "priceRange": "$5,000 - $80,000"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Hair Transplant Clinic CRM",
+          "description": "Patient management, WhatsApp automation, multilingual support",
+          "offers": {
+            "@type": "Offer",
+            "priceRange": "$8,000 - $25,000"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Real Estate CRM Dubai",
+          "description": "Property Finder integration, unit inventory, commission automation",
+          "offers": {
+            "@type": "Offer",
+            "priceRange": "$12,000 - $50,000"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Construction ERP Saudi Arabia",
+          "description": "Milestone tracking, Vision 2030 compliance, subcontractor management",
+          "offers": {
+            "@type": "Offer",
+            "priceRange": "$25,000 - $150,000"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Hotel AI Concierge",
+          "description": "Guest management, AI concierge, housekeeping automation",
+          "offers": {
+            "@type": "Offer",
+            "priceRange": "$15,000 - $60,000"
+          }
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Logistics Software Germany",
+          "description": "Fleet management, WMS, digital POD, GDPR compliant",
+          "offers": {
+            "@type": "Offer",
+            "priceRange": "$20,000 - $80,000"
+          }
+        }
+      }
+    ]
+  },
+  "award": [
+    "50+ Enterprise Projects Delivered",
+    "0 Missed Deadlines in 24 Months",
+    "99.9% System Uptime Across All Deployments"
+  ],
+  "knowsAbout": [
+    "Enterprise Resource Planning",
+    "AI Automation",
+    "Cybersecurity",
+    "Penetration Testing",
+    "NCA Compliance",
+    "SAMA Cybersecurity Framework",
+    "GDPR Compliance",
+    "ISO 27001",
+    "MRP Manufacturing Systems",
+    "Custom Software Development",
+    "Real Estate CRM",
+    "Hotel Management Systems",
+    "Construction ERP",
+    "Logistics Management",
+    "Recruitment Software",
+    "Manufacturing ERP",
+    "Fintech Software",
+    "WhatsApp Business Automation",
+    "Cloud Architecture",
+    "DevOps"
+  ],
+  "serviceArea": [
+    {
+      "@type": "Country",
+      "name": "Pakistan"
+    },
+    {
+      "@type": "Country",
+      "name": "United Arab Emirates"
+    },
+    {
+      "@type": "Country",
+      "name": "Saudi Arabia"
+    },
+    {
+      "@type": "Country",
+      "name": "Turkey"
+    },
+    {
+      "@type": "Country",
+      "name": "Germany"
+    },
+    {
+      "@type": "Country",
+      "name": "Singapore"
+    },
+    {
+      "@type": "Country",
+      "name": "United Kingdom"
+    },
+    {
+      "@type": "Country",
+      "name": "Canada"
+    },
+    {
+      "@type": "Country",
+      "name": "Australia"
+    }
+  ]
+}
