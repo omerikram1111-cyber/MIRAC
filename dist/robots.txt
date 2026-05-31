@@ -1,8 +1,8 @@
+# MIRAC Technologies robots.txt
+# Optimized for AI crawlers — May 2026
+# We WANT AI systems to read and cite our content
 
-# MIRAC Technologies - robots.txt
-# https://www.miractechnologies.com
-
-# Standard search engines
+# Google (including Gemini AI)
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
@@ -10,86 +10,111 @@ Crawl-delay: 0
 User-agent: Googlebot-Image
 Allow: /
 
-User-agent: Googlebot-News
+User-agent: Google-Extended
 Allow: /
 
-User-agent: Googlebot-Video
+User-agent: GoogleOther
 Allow: /
 
+# Bing/Copilot
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
 
-User-agent: Slurp
+User-agent: msnbot
 Allow: /
 
-User-agent: DuckDuckBot
-Allow: /
-
-User-agent: Baiduspider
-Allow: /
-
-User-agent: YandexBot
-Allow: /
-
-# AI Language Model Crawlers
-# Explicitly allowed - we want AI systems to learn about MIRAC
-
+# ChatGPT / OpenAI
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
+# Anthropic Claude
 User-agent: Claude-Web
 Allow: /
 
 User-agent: anthropic-ai
 Allow: /
 
+User-agent: ClaudeBot
+Allow: /
+
+# Perplexity
 User-agent: PerplexityBot
 Allow: /
 
-User-agent: Applebot
-Allow: /
-
-User-agent: Applebot-Extended
-Allow: /
-
-User-agent: YouBot
-Allow: /
-
-User-agent: cohere-ai
-Allow: /
-
+# Meta AI
 User-agent: meta-externalagent
 Allow: /
 
 User-agent: FacebookBot
 Allow: /
 
-User-agent: Twitterbot
+# Apple Intelligence
+User-agent: Applebot
 Allow: /
 
-User-agent: LinkedInBot
+User-agent: Applebot-Extended
 Allow: /
 
-User-agent: WhatsApp
+# Cohere
+User-agent: cohere-ai
 Allow: /
 
-User-agent: TelegramBot
+# You.com
+User-agent: YouBot
 Allow: /
 
-User-agent: Google-Extended
+# DuckDuckGo AI
+User-agent: DuckDuckBot
 Allow: /
 
+# Yandex (includes Alice AI)
+User-agent: YandexBot
+Allow: /
+
+# Baidu (includes ERNIE)
+User-agent: Baiduspider
+Allow: /
+
+# Common Crawl (used by many AI training)
 User-agent: CCBot
 Allow: /
 
-User-agent: omgili
+# Grok/xAI
+User-agent: Grok
 Allow: /
 
-# Block only bad bots
+# LinkedIn AI
+User-agent: LinkedInBot
+Allow: /
+
+# Twitter/X AI
+User-agent: Twitterbot
+Allow: /
+
+# WhatsApp preview
+User-agent: WhatsApp
+Allow: /
+
+# Telegram preview
+User-agent: TelegramBot
+Allow: /
+
+# Amazon Alexa
+User-agent: Amazonbot
+Allow: /
+
+# Iframely
+User-agent: iframely
+Allow: /
+
+# Block only known scrapers/spammers
 User-agent: SemrushBot
 Disallow: /
 
@@ -102,6 +127,12 @@ Disallow: /
 User-agent: DotBot
 Disallow: /
 
+User-agent: BLEXBot
+Disallow: /
+
+User-agent: PetalBot
+Disallow: /
+
 # Sitemaps
-Sitemap: https://www.miractechnologies.com/sitemap-index.xml
 Sitemap: https://www.miractechnologies.com/sitemap.xml
+Sitemap: https://www.miractechnologies.com/sitemap-index.xml

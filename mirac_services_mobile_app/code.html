@@ -102,7 +102,29 @@
       min-height: max(884px, 100dvh);
     }
   </style>
-  </head>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "xPath": [
+      "/html/head/title",
+      "/html/head/meta[@name='description']/@content"
+    ],
+    "cssSelector": [
+      "h1",
+      ".hero-subtitle",
+      ".page-description",
+      ".answer-block",
+      ".passage-block"
+    ]
+  },
+  "url": "https://www.miractechnologies.com/mirac_services_mobile_app/code"
+}
+</script>
+</head>
 <body class="font-body selection:bg-primary-container selection:text-on-primary">
 <!-- TopAppBar Shell -->
 <nav class="fixed top-0 w-full z-50 bg-black border-b border-[#484848] flex justify-between items-center px-6 py-4">
