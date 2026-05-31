@@ -101,6 +101,28 @@
           },
         }
     </script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "xPath": [
+      "/html/head/title",
+      "/html/head/meta[@name='description']/@content"
+    ],
+    "cssSelector": [
+      "h1",
+      ".hero-subtitle",
+      ".page-description",
+      ".answer-block",
+      ".passage-block"
+    ]
+  },
+  "url": "https://www.miractechnologies.com/mirac_contact_desktop/code"
+}
+</script>
 </head>
 <body class="font-body selection:bg-primary-container selection:text-black">
 <!-- TopNavBar -->
