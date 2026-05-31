@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hotel Revenue Leak Calculator — How Much Is Your Resort Losing?</title>
+<meta name="description" content="Calculate the exact revenue your hotel or resort loses to missed upsells, manual operations and slow guest service. Maldives, Bali, UAE, Thailand resorts.">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body { background-color: #03040A; color: #E2E8F0; font-family: 'Space Grotesk', sans-serif; margin: 0; padding: 40px 20px; line-height: 1.6; }
+  h1, h2, h3, .metric-title { font-family: 'Orbitron', sans-serif; color: #fff; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+  @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+  .panel { background: rgba(255,255,255,0.02); border: 1px solid rgba(0,240,255,0.1); padding: 30px; border-radius: 8px; margin-bottom: 20px; }
+  .input-group { margin-bottom: 20px; }
+  label { display: flex; justify-content: space-between; margin-bottom: 8px; font-weight: 700; color: #00F0FF; }
+  input[type=range] { width: 100%; cursor: pointer; accent-color: #00F0FF; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .card { padding: 20px; border-radius: 8px; text-align: center; }
+  .card-val { font-size: 1.8rem; font-family: 'Orbitron'; font-weight: bold; margin: 10px 0; }
+  .c-red { background: rgba(255,50,50,0.1); border: 1px solid #FF3232; color: #FF3232; }
+  .c-orange { background: rgba(255,140,0,0.1); border: 1px solid #FF8C00; color: #FF8C00; }
+  .c-yellow { background: rgba(255,200,0,0.1); border: 1px solid #FFC800; color: #FFC800; }
+  .c-cyan { background: rgba(0,240,255,0.1); border: 1px solid #00F0FF; color: #00F0FF; }
+  .c-green { background: rgba(0,255,100,0.1); border: 1px solid #00FF64; color: #00FF64; }
+  .insight { font-size: 1.1rem; border-left: 4px solid #00F0FF; padding-left: 20px; margin: 30px 0; color: #A0AEC0; }
+  .btn { display: block; width: 100%; padding: 15px; background: #00F0FF; color: #03040A; font-family: 'Orbitron'; text-align: center; text-decoration: none; font-weight: bold; border-radius: 4px; cursor: pointer; border: none; font-size: 1.1rem; }
+  .btn:hover { background: #00C0CC; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Hotel Revenue Leak Calculator</h1>
+  <p>Calculate the exact revenue your resort loses to missed upsells and manual operations.</p>
+
+  <div class="grid">
+    <div class="inputs">
+      <div class="panel">
+        <div class="input-group">
+          <label>Number of rooms <span id="rmVal">80</span></label>
+          <input type="range" id="rooms" min="10" max="500" value="80" oninput="updateVal('rooms','rmVal'); calc()">
+        </div>
+        <div class="input-group">
+          <label>Avg occupancy rate (%) <span id="occVal">72%</span></label>
+          <input type="range" id="occupancy" min="40" max="100" value="72" oninput="updateValPct('occupancy','occVal'); calc()">
+        </div>
+        <div class="input-group">
+          <label>Avg nightly rate (USD) <span id="rateVal">$450</span></label>
+          <input type="range" id="rate" min="100" max="2000" step="50" value="450" oninput="updateValMoney('rate','rateVal'); calc()">
+        </div>
+        <div class="input-group">
+          <label>Avg length of stay (nights) <span id="stayVal">4</span></label>
+          <input type="range" id="stay" min="1" max="14" value="4" oninput="updateVal('stay','stayVal'); calc()">
+        </div>
+        <div class="input-group">
+          <label>Staff handling manual requests <span id="staffVal">12</span></label>
+          <input type="range" id="staff" min="2" max="50" value="12" oninput="updateVal('staff','staffVal'); calc()">
+        </div>
+        <div class="input-group">
+          <label>Current upsell acceptance (%) <span id="upRateVal">8%</span></label>
+          <input type="range" id="upsellRate" min="0" max="30" value="8" oninput="updateValPct('upsellRate','upRateVal'); calc()">
+        </div>
+        <div class="input-group">
+          <label>Avg upsell value (USD) <span id="upVal">$180</span></label>
+          <input type="range" id="upsellValue" min="50" max="1000" step="10" value="180" oninput="updateValMoney('upsellValue','upVal'); calc()">
+        </div>
+
+        <div class="input-group">
+          <label>Monthly double bookings <span id="dblVal">3</span></label>
+          <input type="range" id="doubleBookings" min="0" max="20" value="3" oninput="updateVal('doubleBookings','dblVal'); calc()">
+        </div>
+        <div class="input-group">
+          <label>Staff hourly cost (USD) <span id="hrCostVal">$12</span></label>
+          <input type="range" id="staffHourlyCost" min="5" max="50" value="12" oninput="updateValMoney('staffHourlyCost','hrCostVal'); calc()">
+        </div>
+      </div>
+    </div>
+
+    <div class="outputs">
+      <div class="cards">
+        <div class="card c-red">
+          <div class="metric-title">MONTHLY REVENUE LEAK</div>
+          <div class="card-val" id="outMonthly">$0</div>
+        </div>
+        <div class="card c-orange">
+          <div class="metric-title">ANNUAL OPPORTUNITY</div>
+          <div class="card-val" id="outAnnual">$0</div>
+        </div>
+        <div class="card c-yellow" style="grid-column: span 2;">
+          <div class="metric-title">UPSELL POTENTIAL</div>
+          <div class="card-val" id="outUpsells">$0/month</div>
+        </div>
+        <div class="card c-cyan">
+          <div class="metric-title">SYSTEM INVESTMENT</div>
+          <div class="card-val" id="outInv">$0</div>
+        </div>
+        <div class="card c-green">
+          <div class="metric-title">PAYBACK PERIOD</div>
+          <div class="card-val" id="outPayback">0 months</div>
+        </div>
+      </div>
+
+      <div class="insight" id="insightText"></div>
+
+      <div class="panel">
+        <h3>Get Your Free Resort Revenue Assessment</h3>
+        <button class="btn" onclick="window.location.href='/#contact'">GET FREE ASSESSMENT →</button>
+
+        <div class="input-group">
+          <label>Monthly double bookings <span id="dblVal">3</span></label>
+          <input type="range" id="doubleBookings" min="0" max="20" value="3" oninput="updateVal('doubleBookings','dblVal'); calc()">
+        </div>
+        <div class="input-group">
+          <label>Staff hourly cost (USD) <span id="hrCostVal">$12</span></label>
+          <input type="range" id="staffHourlyCost" min="5" max="50" value="12" oninput="updateValMoney('staffHourlyCost','hrCostVal'); calc()">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function updateVal(id, spanId) { document.getElementById(spanId).innerText = document.getElementById(id).value; }
+function updateValMoney(id, spanId) { document.getElementById(spanId).innerText = '$' + parseInt(document.getElementById(id).value).toLocaleString(); }
+function updateValPct(id, spanId) { document.getElementById(spanId).innerText = document.getElementById(id).value + '%'; }
+
+function calc() {
+  const rooms = parseFloat(document.getElementById('rooms').value);
+  const occupancy = parseFloat(document.getElementById('occupancy').value);
+  const rate = parseFloat(document.getElementById('rate').value);
+  const stay = parseFloat(document.getElementById('stay').value);
+  const staff = parseFloat(document.getElementById('staff').value);
+  const upRate = parseFloat(document.getElementById('upsellRate').value);
+  const upValue = parseFloat(document.getElementById('upsellValue').value);
+  const doubleBookings = parseFloat(document.getElementById('doubleBookings').value);
+  const staffHourlyCost = parseFloat(document.getElementById('staffHourlyCost').value);
+
+  const occupiedRooms = rooms * (occupancy/100);
+  const monthlyGuests = occupiedRooms * 30 / stay;
+
+  const currentUpsellRevenue = monthlyGuests * (upRate/100) * upValue;
+  const optimizedUpsellRate = 0.25;
+  const optimizedUpsellRevenue = monthlyGuests * optimizedUpsellRate * upValue;
+  let upsellLeak = optimizedUpsellRevenue - currentUpsellRevenue;
+  if(upsellLeak < 0) upsellLeak = 0;
+
+  const staffWasteCost = staff * 3 * 30 * staffHourlyCost;
+  const doubleBookingCost = doubleBookings * rate * stay;
+  const reviewImpact = monthlyGuests * rate * stay * 0.02;
+
+  const totalMonthlyLeak = upsellLeak + staffWasteCost + doubleBookingCost + reviewImpact;
+  const annualLeak = totalMonthlyLeak * 12;
+
+  const systemCost = Math.min(60000, Math.max(15000, rooms * 200));
+  const payback = (systemCost / totalMonthlyLeak).toFixed(1);
+
+  document.getElementById('outMonthly').innerText = '$' + Math.round(totalMonthlyLeak).toLocaleString();
+  document.getElementById('outAnnual').innerText = '$' + Math.round(annualLeak).toLocaleString();
+  document.getElementById('outUpsells').innerText = '$' + Math.round(upsellLeak).toLocaleString() + '/month';
+  document.getElementById('outInv').innerText = 'Est. $' + Math.round(systemCost).toLocaleString();
+  document.getElementById('outPayback').innerText = payback + ' months';
+
+  document.getElementById('insightText').innerText =
+    `Your ${rooms}-room property at ${occupancy}% occupancy is seeing ${Math.round(monthlyGuests)} guests/month. With ${upRate}% upsell acceptance vs the 25% achievable with AI concierge, you're leaving $${Math.round(upsellLeak).toLocaleString()}/month on the table — just from upsells alone.`;
+}
+
+calc();
+</script>
+</body>
+</html>

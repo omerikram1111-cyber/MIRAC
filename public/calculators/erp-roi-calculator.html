@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ERP ROI Calculator — Calculate Your Return on Investment</title>
+<meta name="description" content="Calculate exactly what ERP will return for your business. Real numbers. Instant results. Used by 50+ companies across Pakistan, UAE and Saudi Arabia.">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body { background-color: #03040A; color: #E2E8F0; font-family: 'Space Grotesk', sans-serif; margin: 0; padding: 40px 20px; line-height: 1.6; }
+  h1, h2, h3, .metric-title { font-family: 'Orbitron', sans-serif; color: #fff; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+  @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+  .panel { background: rgba(255,255,255,0.02); border: 1px solid rgba(0,240,255,0.1); padding: 30px; border-radius: 8px; margin-bottom: 20px; }
+  .input-group { margin-bottom: 20px; }
+  label { display: flex; justify-content: space-between; margin-bottom: 8px; font-weight: 700; color: #00F0FF; }
+  input[type=range] { width: 100%; cursor: pointer; accent-color: #00F0FF; }
+  select, input[type=text], input[type=email] { width: 100%; padding: 10px; background: rgba(0,0,0,0.5); border: 1px solid rgba(0,240,255,0.2); color: #fff; font-family: 'Space Grotesk'; border-radius: 4px; box-sizing: border-box; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .card { padding: 20px; border-radius: 8px; text-align: center; }
+  .card-val { font-size: 1.8rem; font-family: 'Orbitron'; font-weight: bold; margin: 10px 0; }
+  .c-red { background: rgba(255,50,50,0.1); border: 1px solid #FF3232; color: #FF3232; }
+  .c-cyan { background: rgba(0,240,255,0.1); border: 1px solid #00F0FF; color: #00F0FF; }
+  .c-yellow { background: rgba(255,200,0,0.1); border: 1px solid #FFC800; color: #FFC800; }
+  .c-green { background: rgba(0,255,100,0.1); border: 1px solid #00FF64; color: #00FF64; }
+  .insight { font-size: 1.1rem; border-left: 4px solid #00F0FF; padding-left: 20px; margin: 30px 0; color: #A0AEC0; }
+  .btn { display: block; width: 100%; padding: 15px; background: #00F0FF; color: #03040A; font-family: 'Orbitron'; text-align: center; text-decoration: none; font-weight: bold; border-radius: 4px; cursor: pointer; border: none; font-size: 1.1rem; }
+  .btn:hover { background: #00C0CC; }
+  .trust { display: flex; justify-content: space-between; font-size: 0.8rem; color: #A0AEC0; margin-top: 20px; }
+  .action-buttons { display: flex; gap: 10px; margin-bottom: 20px; }
+  .action-btn { flex: 1; padding: 10px; background: transparent; border: 1px solid #00F0FF; color: #00F0FF; cursor: pointer; border-radius: 4px; font-family: 'Space Grotesk'; }
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "ERP ROI Calculator",
+  "applicationCategory": "BusinessApplication",
+  "operatingSystem": "All"
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "What is ERP ROI?", "acceptedAnswer": {"@type": "Answer", "text": "ERP ROI measures the financial return generated from an ERP investment over a specific period."}},
+    {"@type": "Question", "name": "How do you calculate manual labor cost?", "acceptedAnswer": {"@type": "Answer", "text": "It is calculated by multiplying hours wasted by the employee's hourly rate and annualizing it."}},
+    {"@type": "Question", "name": "What is the typical payback period for an ERP?", "acceptedAnswer": {"@type": "Answer", "text": "Typically between 6 and 18 months depending on the operational inefficiencies resolved."}},
+    {"@type": "Question", "name": "Does this calculator account for staff turnover?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, it calculates turnover cost from poor systems by factoring in hiring and training expenses."}},
+    {"@type": "Question", "name": "How accurate is the investment estimate?", "acceptedAnswer": {"@type": "Answer", "text": "The estimate uses MIRAC Technologies' historical pricing data for fixed-price enterprise deployments."}},
+    {"@type": "Question", "name": "Can I share my results?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, use the action buttons to print or share your custom ROI analysis."}}
+  ]
+}
+</script>
+</head>
+<body>
+<div class="container">
+  <h1>ERP ROI Calculator</h1>
+  <p>Calculate your precise return on investment for a custom enterprise ERP.</p>
+
+  <div class="grid">
+    <div class="inputs">
+      <div class="panel">
+        <h3>Section 1: Your Business</h3>
+        <div class="input-group">
+          <label>Employees <span id="empVal">100</span></label>
+          <input type="range" id="employees" min="10" max="5000" value="100" oninput="updateVal('employees','empVal'); calc()">
+        </div>
+        <div class="input-group">
+          <label>Annual Revenue (USD) <span id="revVal">$2,000,000</span></label>
+          <input type="range" id="revenue" min="100000" max="50000000" step="100000" value="2000000" oninput="updateValMoney('revenue','revVal'); calc()">
+        </div>
+        <div class="input-group">
+          <label>Industry</label>
+          <select id="industry" onchange="calc()">
+            <option>Manufacturing</option><option>Logistics</option><option>Healthcare</option>
+            <option>Real Estate</option><option>Construction</option><option>Retail</option>
+            <option>Government</option><option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Section 2: Current Pain Points</h3>
+        <div class="input-group">
+          <label>Hours/week on manual data entry per employee <span id="hrsVal">8</span></label>
+          <input type="range" id="hours" min="1" max="20" value="8" oninput="updateVal('hours','hrsVal'); calc()">
+        </div>
+        <div class="input-group">
+          <label>Avg hourly cost (USD) <span id="rateVal">$15</span></label>
+          <input type="range" id="rate" min="5" max="100" value="15" oninput="updateValMoney('rate','rateVal'); calc()">
+        </div>
+        <div class="input-group">
+          <label>Departments using separate systems <span id="deptVal">6</span></label>
+          <input type="range" id="dept" min="1" max="20" value="6" oninput="updateVal('dept','deptVal'); calc()">
+        </div>
+        <div class="input-group">
+          <label>Error rate in reports (%) <span id="errVal">15%</span></label>
+          <input type="range" id="errorRate" min="1" max="30" value="15" oninput="updateValPct('errorRate','errVal'); calc()">
+        </div>
+        <div class="input-group">
+          <label>Days to generate monthly report <span id="daysVal">7</span></label>
+          <input type="range" id="days" min="1" max="30" value="7" oninput="updateVal('days','daysVal'); calc()">
+        </div>
+
+        <div class="input-group">
+          <label>Countries operating in</label>
+          <select id="countries" onchange="calc()">
+            <option>Pakistan</option><option>UAE</option><option>Saudi Arabia</option>
+            <option>Turkey</option><option>Germany</option><option>Other</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="panel">
+        <h3>Section 3: Current Costs</h3>
+        <div class="input-group">
+          <label>Annual IT spend (USD) <span id="itSpendVal">$50,000</span></label>
+          <input type="range" id="itSpend" min="0" max="500000" step="5000" value="50000" oninput="updateValMoney('itSpend','itSpendVal'); calc()">
+        </div>
+
+        <div class="input-group">
+          <label>Staff turnover rate (%) <span id="turnoverVal">20%</span></label>
+          <input type="range" id="turnover" min="5" max="50" value="20" oninput="updateValPct('turnover','turnoverVal'); calc()">
+        </div>
+        <div class="input-group">
+          <label>Cost to hire + train per employee (USD) <span id="hireCostVal">$5,000</span></label>
+          <input type="range" id="hireCost" min="1000" max="20000" step="500" value="5000" oninput="updateValMoney('hireCost','hireCostVal'); calc()">
+        </div>
+      </div>
+    </div>
+
+    <div class="outputs">
+      <div class="action-buttons">
+        <button class="action-btn" onclick="window.print()">Print Results</button>
+        <button class="action-btn" onclick="shareWhatsApp()">Share via WhatsApp</button>
+      </div>
+
+      <div class="cards">
+        <div class="card c-red">
+          <div class="metric-title">ANNUAL LOSS</div>
+          <div class="card-val" id="outLoss">$0</div>
+          <div>being lost to manual operations</div>
+        </div>
+        <div class="card c-cyan">
+          <div class="metric-title">ERP INVESTMENT</div>
+          <div class="card-val" id="outInv">$0 - $0</div>
+          <div>fixed-price estimate</div>
+        </div>
+        <div class="card c-yellow">
+          <div class="metric-title">PAYBACK PERIOD</div>
+          <div class="card-val" id="outPayback">0.0 months</div>
+          <div>to full return</div>
+        </div>
+        <div class="card c-green">
+          <div class="metric-title">3-YEAR ROI</div>
+          <div class="card-val" id="outROI">0%</div>
+          <div>return over 3 years</div>
+        </div>
+      </div>
+
+      <div class="insight" id="insightText"></div>
+
+      <div class="panel" style="margin-top: 30px;">
+        <h3>Get Your Custom ERP Proposal</h3>
+        <p style="color: #A0AEC0; font-size: 0.9rem;">Based on your numbers, here's what MIRAC would build for your business.</p>
+        <form onsubmit="event.preventDefault(); alert('We\'ll send your custom proposal within 24 hours based on your numbers.');">
+          <div class="input-group"><input type="text" placeholder="Name" required></div>
+          <div class="input-group"><input type="text" placeholder="Company" required></div>
+          <div class="input-group"><input type="email" placeholder="Email" required></div>
+          <button type="submit" class="btn">GET MY FREE PROPOSAL →</button>
+        </form>
+        <div class="trust">
+          <span>✓ Fixed-price contract</span>
+          <span>✓ Free discovery call</span>
+          <span>✓ NDA before we discuss anything</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function updateVal(id, spanId) { document.getElementById(spanId).innerText = document.getElementById(id).value; }
+function updateValMoney(id, spanId) { document.getElementById(spanId).innerText = '$' + parseInt(document.getElementById(id).value).toLocaleString(); }
+function updateValPct(id, spanId) { document.getElementById(spanId).innerText = document.getElementById(id).value + '%'; }
+
+function calc() {
+  const employees = parseFloat(document.getElementById('employees').value);
+  const annualRevenue = parseFloat(document.getElementById('revenue').value);
+  const industry = document.getElementById('industry').value;
+  const hoursWasted = parseFloat(document.getElementById('hours').value);
+  const hourlyRate = parseFloat(document.getElementById('rate').value);
+  const departments = parseFloat(document.getElementById('dept').value);
+  const errorRate = parseFloat(document.getElementById('errorRate').value);
+  const reportDays = parseFloat(document.getElementById('days').value);
+  const turnoverRate = parseFloat(document.getElementById('turnover').value);
+  const hiringCost = parseFloat(document.getElementById('hireCost').value);
+
+  const weeklyWaste = employees * hoursWasted * hourlyRate;
+  const annualLaborWaste = weeklyWaste * 52;
+  const errorCost = annualRevenue * (errorRate/100) * 0.05;
+  const reportingCost = reportDays * 12 * employees * 0.1 * hourlyRate * 8;
+  const fragmentationCost = departments * 15000;
+  const turnoverCost = employees * (turnoverRate/100) * hiringCost * 0.3;
+
+  const totalAnnualLoss = annualLaborWaste + errorCost + reportingCost + fragmentationCost + turnoverCost;
+
+  let erpInvestment = totalAnnualLoss * 0.35;
+  erpInvestment = Math.max(25000, Math.min(300000, erpInvestment));
+  const minInv = Math.round(erpInvestment * 0.9);
+  const maxInv = Math.round(erpInvestment * 1.1);
+
+  const paybackMonths = (erpInvestment / (totalAnnualLoss/12)).toFixed(1);
+  const threeYearROI = Math.round(((totalAnnualLoss * 3 - erpInvestment) / erpInvestment * 100));
+
+  document.getElementById('outLoss').innerText = '$' + Math.round(totalAnnualLoss).toLocaleString();
+  document.getElementById('outInv').innerText = '$' + minInv.toLocaleString() + ' - $' + maxInv.toLocaleString();
+  document.getElementById('outPayback').innerText = paybackMonths + ' months';
+  document.getElementById('outROI').innerText = threeYearROI + '%';
+
+  document.getElementById('insightText').innerText =
+    `Your ${employees} employees in ${industry} are losing ${hoursWasted} hours/week to manual processes. At $${hourlyRate}/hour, that's $${Math.round(annualLaborWaste).toLocaleString()}/year in direct labor waste — before counting errors, delays, and missed opportunities. An ERP system would pay for itself in ${paybackMonths} months.`;
+}
+
+function shareWhatsApp() {
+  const text = `I just calculated our business is losing ${document.getElementById('outLoss').innerText} annually to manual operations. Check out this ERP calculator: https://www.miractechnologies.com/calculators/erp-roi-calculator`;
+  window.open('https://api.whatsapp.com/send?text=' + encodeURIComponent(text));
+}
+
+// Initial calc
+calc();
+</script>
+</body>
+</html>

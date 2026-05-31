@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dubai Real Estate Lead Loss Calculator — How Much Are You Losing?</title>
+<meta name="description" content="Calculate exactly how much your Dubai real estate agency loses to slow lead follow-up. Enter your numbers and see your monthly commission leak instantly.">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body { background-color: #03040A; color: #E2E8F0; font-family: 'Space Grotesk', sans-serif; margin: 0; padding: 40px 20px; line-height: 1.6; }
+  h1, h2, h3, .metric-title { font-family: 'Orbitron', sans-serif; color: #fff; }
+  .container { max-width: 1000px; margin: 0 auto; }
+  .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+  @media (max-width: 768px) { .grid { grid-template-columns: 1fr; } }
+  .panel { background: rgba(255,255,255,0.02); border: 1px solid rgba(0,240,255,0.1); padding: 30px; border-radius: 8px; margin-bottom: 20px; }
+  .input-group { margin-bottom: 20px; }
+  label { display: flex; justify-content: space-between; margin-bottom: 8px; font-weight: 700; color: #00F0FF; }
+  input[type=range] { width: 100%; cursor: pointer; accent-color: #00F0FF; }
+  .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .card { padding: 20px; border-radius: 8px; text-align: center; }
+  .card-val { font-size: 1.8rem; font-family: 'Orbitron'; font-weight: bold; margin: 10px 0; }
+  .c-red { background: rgba(255,50,50,0.1); border: 1px solid #FF3232; color: #FF3232; }
+  .c-orange { background: rgba(255,140,0,0.1); border: 1px solid #FF8C00; color: #FF8C00; }
+  .c-yellow { background: rgba(255,200,0,0.1); border: 1px solid #FFC800; color: #FFC800; }
+  .c-green { background: rgba(0,255,100,0.1); border: 1px solid #00FF64; color: #00FF64; }
+  .insight { font-size: 1.1rem; border-left: 4px solid #00F0FF; padding-left: 20px; margin: 30px 0; color: #A0AEC0; }
+  .btn { display: block; width: 100%; padding: 15px; background: #00F0FF; color: #03040A; font-family: 'Orbitron'; text-align: center; text-decoration: none; font-weight: bold; border-radius: 4px; cursor: pointer; border: none; font-size: 1.1rem; }
+  .btn:hover { background: #00C0CC; }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Dubai Real Estate Lead Loss Calculator</h1>
+  <p>How much commission are you leaking to slow follow-ups?</p>
+
+  <div class="grid">
+    <div class="inputs">
+      <div class="panel">
+        <div class="input-group">
+          <label>Number of agents <span id="agentVal">15</span></label>
+          <input type="range" id="agents" min="1" max="100" value="15" oninput="updateVal('agents','agentVal'); calc()">
+        </div>
+        <div class="input-group">
+          <label>Monthly leads (Property Finder) <span id="pfVal">120</span></label>
+          <input type="range" id="pfLeads" min="10" max="500" value="120" oninput="updateVal('pfLeads','pfVal'); calc()">
+        </div>
+        <div class="input-group">
+          <label>Monthly leads (Bayut) <span id="bayutVal">80</span></label>
+          <input type="range" id="bayutLeads" min="10" max="300" value="80" oninput="updateVal('bayutLeads','bayutVal'); calc()">
+        </div>
+        <div class="input-group">
+          <label>Other leads (Social/Walk-ins) <span id="otherVal">40</span></label>
+          <input type="range" id="otherLeads" min="5" max="200" value="40" oninput="updateVal('otherLeads','otherVal'); calc()">
+        </div>
+        <div class="input-group">
+          <label>Avg response time (hours) <span id="timeVal">4</span></label>
+          <input type="range" id="responseTime" min="0.5" max="24" step="0.5" value="4" oninput="updateVal('responseTime','timeVal'); calc()">
+        </div>
+        <div class="input-group">
+          <label>Avg property value (AED) <span id="propVal">2,000,000</span></label>
+          <input type="range" id="propValue" min="500000" max="10000000" step="100000" value="2000000" oninput="updateValMoney('propValue','propVal'); calc()">
+        </div>
+        <div class="input-group">
+          <label>Agency commission rate (%) <span id="commVal">2%</span></label>
+          <input type="range" id="commission" min="1" max="4" step="0.5" value="2" oninput="updateValPct('commission','commVal'); calc()">
+        </div>
+        <div class="input-group">
+          <label>Current conversion rate (%) <span id="convVal">8%</span></label>
+          <input type="range" id="currentConv" min="1" max="20" value="8" oninput="updateValPct('currentConv','convVal'); calc()">
+        </div>
+      </div>
+    </div>
+
+    <div class="outputs">
+      <div class="cards">
+        <div class="card c-red">
+          <div class="metric-title">MONTHLY COMMISSION LEAK</div>
+          <div class="card-val" id="outMonthly">AED 0</div>
+        </div>
+        <div class="card c-orange">
+          <div class="metric-title">ANNUAL COMMISSION LEAK</div>
+          <div class="card-val" id="outAnnual">AED 0</div>
+        </div>
+        <div class="card c-yellow">
+          <div class="metric-title">PER AGENT OPPORTUNITY</div>
+          <div class="card-val" id="outPerAgent">AED 0</div>
+          <div>missed per year</div>
+        </div>
+        <div class="card c-green">
+          <div class="metric-title">WITH AUTOMATION</div>
+          <div class="card-val" id="outDeals">0</div>
+          <div>additional deals/month</div>
+        </div>
+      </div>
+
+      <div class="insight" id="insightText"></div>
+
+      <div class="panel">
+        <h3>Get Your Free Real Estate CRM Demo</h3>
+        <p style="color: #A0AEC0; font-size: 0.9rem;" id="demoText">See exactly how automation would work for your agency.</p>
+        <button class="btn" onclick="window.location.href='/#contact'">BOOK FREE DEMO →</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function updateVal(id, spanId) { document.getElementById(spanId).innerText = document.getElementById(id).value; }
+function updateValMoney(id, spanId) { document.getElementById(spanId).innerText = parseInt(document.getElementById(id).value).toLocaleString(); }
+function updateValPct(id, spanId) { document.getElementById(spanId).innerText = document.getElementById(id).value + '%'; }
+
+function calc() {
+  const agents = parseFloat(document.getElementById('agents').value);
+  const pf = parseFloat(document.getElementById('pfLeads').value);
+  const bayut = parseFloat(document.getElementById('bayutLeads').value);
+  const other = parseFloat(document.getElementById('otherLeads').value);
+  const responseTime = parseFloat(document.getElementById('responseTime').value);
+  const propValue = parseFloat(document.getElementById('propValue').value);
+  const commission = parseFloat(document.getElementById('commission').value);
+  const currentConv = parseFloat(document.getElementById('currentConv').value);
+
+  const totalLeads = pf + bayut + other;
+
+  let convRate = 0;
+  if (responseTime <= 1) convRate = 0.35;
+  else if (responseTime <= 4) convRate = 0.20;
+  else if (responseTime <= 8) convRate = 0.12;
+  else convRate = 0.05;
+
+  const currentDeals = totalLeads * (currentConv/100);
+  const currentRevenue = currentDeals * propValue * (commission/100);
+
+  const optimizedDeals = totalLeads * convRate;
+  const optimizedRevenue = optimizedDeals * propValue * (commission/100);
+
+  let monthlyLeak = optimizedRevenue - currentRevenue;
+  if (monthlyLeak < 0) monthlyLeak = 0;
+  const annualLeak = monthlyLeak * 12;
+  const perAgentLoss = annualLeak / agents;
+
+  const additionalDeals = Math.max(0, optimizedDeals - currentDeals);
+
+  document.getElementById('outMonthly').innerText = 'AED ' + Math.round(monthlyLeak).toLocaleString();
+  document.getElementById('outAnnual').innerText = 'AED ' + Math.round(annualLeak).toLocaleString();
+  document.getElementById('outPerAgent').innerText = 'AED ' + Math.round(perAgentLoss).toLocaleString();
+  document.getElementById('outDeals').innerText = Math.round(additionalDeals);
+
+  document.getElementById('insightText').innerText =
+    `Your ${agents} agents handle ${totalLeads} leads/month but respond in ${responseTime} hours on average. At that response time, you're converting ${currentConv}% vs the 35% top agencies achieve with instant automation. That gap costs you AED ${Math.round(monthlyLeak).toLocaleString()}/month in missed commissions.`;
+
+  document.getElementById('demoText').innerText = `See exactly how automation would work for ${agents} agents in Dubai.`;
+}
+
+calc();
+</script>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Case Study: Logistics Platform — 10,000 Shipments Daily | MIRAC Technologies</title>
+<meta name="description" content="How MIRAC Technologies built a logistics platform processing 10,000 shipments daily for a national Pakistan logistics network. WMS + TMS + 12 carrier integrations.">
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body { background-color: #03040A; color: #E2E8F0; font-family: 'Space Grotesk', sans-serif; margin: 0; padding: 40px 20px; line-height: 1.8; }
+  .container { max-width: 900px; margin: 0 auto; }
+  h1, h2, h3 { font-family: 'Orbitron', sans-serif; color: #fff; }
+  h1 { font-size: 2.5rem; margin-bottom: 20px; }
+  h2 { font-size: 1.8rem; margin-top: 40px; color: #00F0FF; }
+  .badge { background: rgba(0,240,255,0.1); color: #00F0FF; padding: 5px 15px; border-radius: 50px; font-size: 0.8rem; font-weight: bold; font-family: 'Orbitron'; letter-spacing: 1px; display: inline-block; margin-bottom: 20px; }
+  .meta-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; background: rgba(255,255,255,0.02); border: 1px solid rgba(255,255,255,0.1); padding: 20px; border-radius: 8px; margin-bottom: 40px; }
+  .meta-item { font-size: 0.9rem; color: #A0AEC0; }
+  .meta-item strong { color: #fff; display: block; margin-bottom: 5px; }
+  .results-strip { display: flex; flex-wrap: wrap; gap: 20px; background: linear-gradient(90deg, rgba(0,240,255,0.1), transparent); border-left: 4px solid #00F0FF; padding: 30px; border-radius: 8px; margin: 40px 0; }
+  .result-box { flex: 1; min-width: 200px; }
+  .result-num { font-family: 'Orbitron'; font-size: 2.5rem; color: #00F0FF; font-weight: bold; line-height: 1; margin-bottom: 10px; }
+  .result-desc { color: #E2E8F0; font-size: 0.9rem; font-weight: bold; }
+  .pill { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); padding: 5px 15px; border-radius: 50px; font-size: 0.85rem; margin: 0 5px 10px 0; display: inline-block; }
+  .testimonial { border-left: 4px solid #00F0FF; padding-left: 20px; margin: 40px 0; font-size: 1.2rem; font-style: italic; color: #fff; }
+  .btn { display: inline-block; background: #00F0FF; color: #03040A; padding: 15px 30px; text-decoration: none; font-weight: bold; font-family: 'Orbitron'; border-radius: 4px; margin-top: 20px; }
+</style>
+<script type="application/ld+json">
+{"@context": "https://schema.org", "@type": "Article", "headline": "Case Study: Logistics Platform \u2014 10,000 Shipments Daily | MIRAC Technologies", "publisher": {"@type": "Organization", "name": "MIRAC Technologies"}}
+</script>
+</head>
+<body>
+<div class="container">
+  <a href="/case-studies" style="color: #00F0FF; text-decoration: none; font-family: 'Orbitron';">← ALL CASE STUDIES</a>
+
+  <div style="margin-top: 40px;">
+    <span class="badge">LOGISTICS & SUPPLY CHAIN</span>
+    <h1>Case Study: Logistics Platform — 10,000 Shipments Daily | MIRAC Technologies</h1>
+  </div>
+
+  <div class="meta-grid">
+    <div class="meta-item"><strong>Client</strong> National Logistics Network, Pakistan</div>
+    <div class="meta-item"><strong>Project</strong> WMS + TMS + Fleet Mobile App</div>
+    <div class="meta-item"><strong>Timeline</strong> 5 months</div>
+    <div class="meta-item"><strong>Investment</strong> $90,000 - $150,000</div>
+  </div>
+
+  <div class="results-strip">
+    <div class='result-box'><div class='result-num'>10,000+</div><div class='result-desc'>Daily shipments processed</div></div><div class='result-box'><div class='result-num'>40%</div><div class='result-desc'>Reduction in delivery time</div></div><div class='result-box'><div class='result-num'>99.2%</div><div class='result-desc'>Order accuracy rate</div></div><div class='result-box'><div class='result-num'>12</div><div class='result-desc'>Carrier APIs integrated</div></div>
+  </div>
+
+  <h2>The Challenge</h2>
+  <p>The logistics network was buckling under scale, attempting to manually route thousands of packages. Dispatchers were overwhelmed, drivers were taking inefficient routes, and package tracking was fundamentally broken, leading to massive customer service backlogs.</p>
+
+
+  <p>Operating a national logistics network in Pakistan requires managing immense volatility. The client was reliant on legacy, on-premise software that was buckling under the exponential increase in e-commerce shipment volume. Dispatch routing was largely manual, relying on the geographic memory of seasoned operators rather than algorithmic optimization. This resulted in highly inefficient delivery routes, excess fuel consumption, and an unacceptable percentage of missed delivery windows. The absence of a robust API layer meant that integrating with major e-commerce platforms required manual data ingestion, which inherently bottlenecked scaling capabilities.</p><p>Our architectural solution centered on decoupling the Transport Management System (TMS) from the Warehouse Management System (WMS) utilizing a microservices approach. This allowed us to scale the tracking and routing engines independently during peak load periods. By integrating 12 distinct carrier APIs via Node.js middleware, the platform now automatically routes shipments based on real-time cost analysis and carrier performance metrics. The deployment of a native mobile application equipped with turn-by-turn navigation and digital proof-of-delivery completely digitized the last mile.</p>
+<h2>The Solution</h2>
+  <p>We developed a high-throughput Transport Management System (TMS) and Warehouse Management System (WMS). We integrated 12 distinct carrier APIs and deployed a real-time GPS tracking mobile app for the entire fleet, enabling automated, optimized dispatch routing.</p>
+
+
+  <h3>Tech Stack Used</h3>
+  <div style="margin-top: 20px; margin-bottom: 40px;">
+    <span class='pill'>Node.js</span><span class='pill'>MongoDB</span><span class='pill'>React</span><span class='pill'>React Native</span><span class='pill'>Google Maps API</span><span class='pill'>Redis</span>
+  </div>
+
+  <h2>The Results</h2>
+  <p>The platform immediately stabilized operations, seamlessly processing over 10,000 shipments daily. Algorithmic routing reduced average delivery times by 40%. Order accuracy skyrocketed to 99.2%, drastically reducing customer complaints.</p>
+
+
+  <p>The velocity of data flow through the new system transformed the operational paradigm. Dispatchers transitioned from manual routing to managing algorithmic exceptions. The real-time GPS tracking significantly reduced customer support call volume, as clients were empowered with accurate, live tracking portals. The aggregation of granular delivery data allowed the executive team to identify systemic bottlenecks at specific regional hubs, leading to targeted process optimizations. Ultimately, the technological foundation provided by MIRAC enabled the network to confidently onboard massive enterprise contracts that their previous infrastructure could not have supported.</p>
+<div class="testimonial">
+    "We were hitting a hard ceiling on growth. MIRAC's platform gave us the technological foundation to double our volume without hiring a single new dispatcher." — Head of Operations
+  </div>
+
+  <div style="background: rgba(255,255,255,0.02); border: 1px solid rgba(0,240,255,0.2); padding: 40px; border-radius: 8px; text-align: center; margin-top: 60px;">
+    <h3 style="margin-top: 0;">Want results like these for your business?</h3>
+    <a href="/#contact" class="btn">DISCUSS YOUR PROJECT →</a>
+  </div>
+</div>
+</body>
+</html>

@@ -210,6 +210,70 @@
       "destination": "/articles/pakistan-erp-market-2026.html"
     },
     {
+      "source": "/hubs/erp-hub",
+      "destination": "/hubs/erp-hub.html"
+    },
+    {
+      "source": "/hubs/cybersecurity-hub",
+      "destination": "/hubs/cybersecurity-hub.html"
+    },
+    {
+      "source": "/hubs/ai-automation-hub",
+      "destination": "/hubs/ai-automation-hub.html"
+    },
+    {
+      "source": "/hubs/industries-hub",
+      "destination": "/hubs/industries-hub.html"
+    },
+    {
+      "source": "/hubs/markets-hub",
+      "destination": "/hubs/markets-hub.html"
+    },
+    {
+      "source": "/case-studies/mining-erp-punjab",
+      "destination": "/case-studies/mining-erp-punjab.html"
+    },
+    {
+      "source": "/case-studies/hospital-billing-lahore",
+      "destination": "/case-studies/hospital-billing-lahore.html"
+    },
+    {
+      "source": "/case-studies/logistics-platform-pakistan",
+      "destination": "/case-studies/logistics-platform-pakistan.html"
+    },
+    {
+      "source": "/case-studies/hotel-dubai",
+      "destination": "/case-studies/hotel-dubai.html"
+    },
+    {
+      "source": "/calculators/erp-roi-calculator",
+      "destination": "/calculators/erp-roi-calculator.html"
+    },
+    {
+      "source": "/calculators/real-estate-lead-calculator",
+      "destination": "/calculators/real-estate-lead-calculator.html"
+    },
+    {
+      "source": "/calculators/hotel-revenue-calculator",
+      "destination": "/calculators/hotel-revenue-calculator.html"
+    },
+    {
+      "source": "/press-releases/pr-001-company-launch",
+      "destination": "/press-releases/pr-001-company-launch.html"
+    },
+    {
+      "source": "/press-releases/pr-002-cybersecurity",
+      "destination": "/press-releases/pr-002-cybersecurity.html"
+    },
+    {
+      "source": "/press-releases/pr-003-gcc-expansion",
+      "destination": "/press-releases/pr-003-gcc-expansion.html"
+    },
+    {
+      "source": "/case-studies",
+      "destination": "/case-studies/index.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
