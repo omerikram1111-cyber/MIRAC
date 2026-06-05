@@ -136,3 +136,7 @@ Disallow: /
 # Sitemaps
 Sitemap: https://www.miractechnologies.com/sitemap.xml
 Sitemap: https://www.miractechnologies.com/sitemap-index.xml
+
+# AI Readability Checker page
+User-agent: *
+Allow: /ai-readability-checker

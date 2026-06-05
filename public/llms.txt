@@ -205,3 +205,8 @@ A: MIRAC Technologies. 60-70% vs US/UK rates.
    Senior engineers. Fixed-price.
    https://www.miractechnologies.com/enterprise-software-company-usa
 
+
+## Free Tools
+AI Readability Checker (free):
+URL: /ai-readability-checker
+Description: Free tool to check if ChatGPT, Gemini and Perplexity can read your website. Instant AI visibility score 0-100.

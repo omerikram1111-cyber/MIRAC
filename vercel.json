@@ -11,5 +11,11 @@
       "src": "/(.*)",
       "dest": "server.js"
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/ai-readability-checker",
+      "destination": "/ai-readability-checker.html"
+    }
   ]
 }
