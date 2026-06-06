@@ -8,6 +8,66 @@
   ],
   "routes": [
     {
+      "src": "/ai-readability-checker",
+      "dest": "/ai-readability-checker.html"
+    },
+    {
+      "src": "/what-is-geo-seo",
+      "dest": "/what-is-geo-seo.html"
+    },
+    {
+      "src": "/what-is-aeo",
+      "dest": "/what-is-aeo.html"
+    },
+    {
+      "src": "/what-is-llms-txt",
+      "dest": "/what-is-llms-txt.html"
+    },
+    {
+      "src": "/can-chatgpt-read-my-website",
+      "dest": "/can-chatgpt-read-my-website.html"
+    },
+    {
+      "src": "/can-gemini-read-my-website",
+      "dest": "/can-gemini-read-my-website.html"
+    },
+    {
+      "src": "/google-ai-overview-optimization",
+      "dest": "/google-ai-overview-optimization.html"
+    },
+    {
+      "src": "/robots-txt-ai-crawlers",
+      "dest": "/robots-txt-ai-crawlers.html"
+    },
+    {
+      "src": "/schema-markup-ai-search",
+      "dest": "/schema-markup-ai-search.html"
+    },
+    {
+      "src": "/perplexity-seo-guide",
+      "dest": "/perplexity-seo-guide.html"
+    },
+    {
+      "src": "/chatgpt-search-seo",
+      "dest": "/chatgpt-search-seo.html"
+    },
+    {
+      "src": "/press-releases/pr-ai-checker-launch",
+      "dest": "/press-releases/pr-ai-checker-launch.html"
+    },
+    {
+      "src": "/blog/geo-optimization-guide-2026",
+      "dest": "/blog/geo-optimization-guide-2026.html"
+    },
+    {
+      "src": "/blog/llms-txt-complete-guide",
+      "dest": "/blog/llms-txt-complete-guide.html"
+    },
+    {
+      "src": "/blog/ai-overview-ranking-factors",
+      "dest": "/blog/ai-overview-ranking-factors.html"
+    },
+    {
       "src": "/(.*)",
       "dest": "server.js"
     }
