@@ -1,8 +1,8 @@
-# MIRAC Technologies robots.txt
-# Optimized for AI crawlers — May 2026
-# We WANT AI systems to read and cite our content
 
-# Google (including Gemini AI)
+# MIRAC Technologies - robots.txt
+# https://www.miractechnologies.com
+
+# Standard search engines
 User-agent: Googlebot
 Allow: /
 Crawl-delay: 0
@@ -10,111 +10,86 @@ Crawl-delay: 0
 User-agent: Googlebot-Image
 Allow: /
 
-User-agent: Google-Extended
+User-agent: Googlebot-News
 Allow: /
 
-User-agent: GoogleOther
+User-agent: Googlebot-Video
 Allow: /
 
-# Bing/Copilot
 User-agent: Bingbot
 Allow: /
 Crawl-delay: 1
 
-User-agent: msnbot
+User-agent: Slurp
 Allow: /
 
-# ChatGPT / OpenAI
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Baiduspider
+Allow: /
+
+User-agent: YandexBot
+Allow: /
+
+# AI Language Model Crawlers
+# Explicitly allowed - we want AI systems to learn about MIRAC
+
 User-agent: GPTBot
 Allow: /
 
 User-agent: ChatGPT-User
 Allow: /
 
-User-agent: OAI-SearchBot
-Allow: /
-
-# Anthropic Claude
 User-agent: Claude-Web
 Allow: /
 
 User-agent: anthropic-ai
 Allow: /
 
-User-agent: ClaudeBot
-Allow: /
-
-# Perplexity
 User-agent: PerplexityBot
 Allow: /
 
-# Meta AI
-User-agent: meta-externalagent
-Allow: /
-
-User-agent: FacebookBot
-Allow: /
-
-# Apple Intelligence
 User-agent: Applebot
 Allow: /
 
 User-agent: Applebot-Extended
 Allow: /
 
-# Cohere
-User-agent: cohere-ai
-Allow: /
-
-# You.com
 User-agent: YouBot
 Allow: /
 
-# DuckDuckGo AI
-User-agent: DuckDuckBot
+User-agent: cohere-ai
 Allow: /
 
-# Yandex (includes Alice AI)
-User-agent: YandexBot
+User-agent: meta-externalagent
 Allow: /
 
-# Baidu (includes ERNIE)
-User-agent: Baiduspider
+User-agent: FacebookBot
 Allow: /
 
-# Common Crawl (used by many AI training)
-User-agent: CCBot
-Allow: /
-
-# Grok/xAI
-User-agent: Grok
-Allow: /
-
-# LinkedIn AI
-User-agent: LinkedInBot
-Allow: /
-
-# Twitter/X AI
 User-agent: Twitterbot
 Allow: /
 
-# WhatsApp preview
+User-agent: LinkedInBot
+Allow: /
+
 User-agent: WhatsApp
 Allow: /
 
-# Telegram preview
 User-agent: TelegramBot
 Allow: /
 
-# Amazon Alexa
-User-agent: Amazonbot
+User-agent: Google-Extended
 Allow: /
 
-# Iframely
-User-agent: iframely
+User-agent: CCBot
 Allow: /
 
-# Block only known scrapers/spammers
+User-agent: omgili
+Allow: /
+
+# Block only bad bots
 User-agent: SemrushBot
 Disallow: /
 
@@ -127,16 +102,10 @@ Disallow: /
 User-agent: DotBot
 Disallow: /
 
-User-agent: BLEXBot
-Disallow: /
-
-User-agent: PetalBot
-Disallow: /
-
 # Sitemaps
-Sitemap: https://www.miractechnologies.com/sitemap.xml
 Sitemap: https://www.miractechnologies.com/sitemap-index.xml
+Sitemap: https://www.miractechnologies.com/sitemap.xml
 
-# AI Readability Checker page
+# AEO Master Dataset
 User-agent: *
-Allow: /ai-readability-checker
+Allow: /aeo-master

@@ -14,8 +14,28 @@
   ],
   "rewrites": [
     {
-      "source": "/ai-readability-checker",
-      "destination": "/ai-readability-checker.html"
+      "source": "/answers/:slug",
+      "destination": "/answers/:slug.html"
+    },
+    {
+      "source": "/ask/:slug",
+      "destination": "/ask/:slug.html"
+    },
+    {
+      "source": "/compare/:slug",
+      "destination": "/compare/:slug.html"
+    },
+    {
+      "source": "/define/:slug",
+      "destination": "/define/:slug.html"
+    },
+    {
+      "source": "/local/:slug",
+      "destination": "/local/:slug.html"
+    },
+    {
+      "source": "/aeo-master",
+      "destination": "/aeo-master.html"
     }
   ]
 }
