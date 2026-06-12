@@ -36,6 +36,146 @@
     {
       "source": "/aeo-master",
       "destination": "/aeo-master.html"
+    },
+    {
+      "source": "/cite/:slug",
+      "destination": "/cite/:slug.html"
+    },
+    {
+      "source": "/passages/:slug",
+      "destination": "/passages/:slug.html"
+    },
+    {
+      "source": "/entity/:slug",
+      "destination": "/entity/:slug.html"
+    },
+    {
+      "source": "/cybersecurity/:slug",
+      "destination": "/cybersecurity/:slug.html"
+    },
+    {
+      "source": "/hotel/:slug",
+      "destination": "/hotel/:slug.html"
+    },
+    {
+      "source": "/real-estate/:slug",
+      "destination": "/real-estate/:slug.html"
+    },
+    {
+      "source": "/hair-transplant/:slug",
+      "destination": "/hair-transplant/:slug.html"
+    },
+    {
+      "source": "/construction/:slug",
+      "destination": "/construction/:slug.html"
+    },
+    {
+      "source": "/manufacturing/:slug",
+      "destination": "/manufacturing/:slug.html"
+    },
+    {
+      "source": "/ai-seo/:slug",
+      "destination": "/ai-seo/:slug.html"
+    },
+    {
+      "source": "/conversations/:slug",
+      "destination": "/conversations/:slug.html"
+    },
+    {
+      "source": "/ar/:slug",
+      "destination": "/ar/:slug.html"
+    },
+    {
+      "source": "/tr/:slug",
+      "destination": "/tr/:slug.html"
+    },
+    {
+      "source": "/de/:slug",
+      "destination": "/de/:slug.html"
+    },
+    {
+      "source": "/fr/:slug",
+      "destination": "/fr/:slug.html"
+    },
+    {
+      "source": "/es/:slug",
+      "destination": "/es/:slug.html"
+    },
+    {
+      "source": "/nl/:slug",
+      "destination": "/nl/:slug.html"
+    },
+    {
+      "source": "/pl/:slug",
+      "destination": "/pl/:slug.html"
+    },
+    {
+      "source": "/ur/:slug",
+      "destination": "/ur/:slug.html"
+    },
+    {
+      "source": "/authority/:slug",
+      "destination": "/authority/:slug.html"
+    },
+    {
+      "source": "/updates/:slug",
+      "destination": "/updates/:slug.html"
+    },
+    {
+      "source": "/zero-click/:slug",
+      "destination": "/zero-click/:slug.html"
+    },
+    {
+      "source": "/schema/:slug",
+      "destination": "/schema/:slug.html"
+    },
+    {
+      "source": "/ai-instructions/:slug",
+      "destination": "/ai-instructions/:slug.html"
+    },
+    {
+      "source": "/snipe/:slug",
+      "destination": "/snipe/:slug.html"
+    },
+    {
+      "source": "/voice/:slug",
+      "destination": "/voice/:slug.html"
+    },
+    {
+      "source": "/knowledge/:slug",
+      "destination": "/knowledge/:slug.html"
+    },
+    {
+      "source": "/passages/master-passage-index",
+      "destination": "/passages/master-passage-index.html"
+    },
+    {
+      "source": "/entity/mirac-entity-hub",
+      "destination": "/entity/mirac-entity-hub.html"
+    },
+    {
+      "source": "/conversations",
+      "destination": "/conversations/index.html"
+    },
+    {
+      "source": "/conversations/index",
+      "destination": "/conversations/index.html"
+    },
+    {
+      "source": "/schema/master-schema-page",
+      "destination": "/schema/master-schema-page.html"
+    },
+    {
+      "source": "/sitemap-priority",
+      "destination": "/sitemap-priority.html"
+    },
+    {
+      "source": "/voice/voice-search-answers",
+      "destination": "/voice/voice-search-answers.html"
+    },
+    {
+      "source": "/knowledge/mirac-knowledge-graph",
+      "destination": "/knowledge/mirac-knowledge-graph.html"
     }
   ]
 }
