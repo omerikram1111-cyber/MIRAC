@@ -176,6 +176,34 @@
     {
       "source": "/knowledge/mirac-knowledge-graph",
       "destination": "/knowledge/mirac-knowledge-graph.html"
+    },
+    {
+      "source": "/disto-ai/:slug",
+      "destination": "/disto-ai/:slug.html"
+    },
+    {
+      "source": "/disto-ai/answers/:slug",
+      "destination": "/disto-ai/answers/:slug.html"
+    },
+    {
+      "source": "/disto-ai/articles/:slug",
+      "destination": "/disto-ai/articles/:slug.html"
+    },
+    {
+      "source": "/disto-ai/compare/:slug",
+      "destination": "/disto-ai/compare/:slug.html"
+    },
+    {
+      "source": "/disto-ai/define/:slug",
+      "destination": "/disto-ai/define/:slug.html"
+    },
+    {
+      "source": "/disto-ai/industry/:slug",
+      "destination": "/disto-ai/industry/:slug.html"
+    },
+    {
+      "source": "/disto-ai/ask/:slug",
+      "destination": "/disto-ai/ask/:slug.html"
     }
   ]
 }
